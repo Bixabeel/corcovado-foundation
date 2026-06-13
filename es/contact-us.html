@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos - Fundación Corcovado</title>
+    <meta name="description" content="Ponte en contacto con la Fundación Corcovado. Ya sea que quieras ser voluntario, donar o aliarte, nuestro equipo está listo para ayudarte.">
+    <link rel="alternate" hreflang="en" href="/contact-us.html">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <!-- Header / Nav -->
+    <header id="siteHeader" class="site-header">
+        <div class="container shell header-shell">
+            <a href="index.html" class="brand">
+                <img src="../assets/img/logo.png" alt="Logo Fundación Corcovado">
+            </a>
+            <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="siteNav" class="site-nav">
+                <div class="nav-top">
+                    <div class="lang-switch">
+                        <a href="../contact-us.html" class="lang-link">EN</a>
+                        <a href="contact-us.html" class="lang-link is-active">ES</a>
+                    </div>
+                    <a href="donate-now.html" class="btn btn-primary donate-btn">Donar Ahora</a>
+                </div>
+                <a href="index.html">Inicio</a>
+                <a href="about-us.html">Nosotros</a>
+                <a href="programs.html">Nuestros Programas</a>
+                <a href="volunteering.html">Cómo Participar</a>
+                <a href="contact-us.html">Contáctanos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero / Intro -->
+        <section class="section-pad">
+            <div class="container shell">
+                <div class="section-heading reveal">
+                    <h2>Ponte en Contacto</h2>
+                    <p>Estamos aquí para ayudarte a conectar con nuestra misión. Ya sea que te interese ser voluntario, donar, establecer alianzas o simplemente aprender más sobre nuestro trabajo, nuestro equipo está listo para asistirte.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Info Grid -->
+        <section class="section-pad-tight">
+            <div class="container shell">
+                <div class="contact-grid">
+                    <div class="contact-card reveal">
+                        <h3>Oficina Principal</h3>
+                        <p>Moravia, San José, Costa Rica</p>
+                        <a href="tel:+50622973013">+506 2297 3013</a>
+                        <a href="mailto:info@corcovadofoundation.org">info@corcovadofoundation.org</a>
+                    </div>
+                    <div class="contact-card reveal">
+                        <h3>Educación Ambiental</h3>
+                        <p>El Progreso de Drake, Península de Osa</p>
+                        <a href="tel:+50650098825">+506 5009 8825</a>
+                        <a href="mailto:helena@corcovadofoundation.org">helena@corcovadofoundation.org</a>
+                    </div>
+                    <div class="contact-card reveal">
+                        <h3>Conservación de Tortugas</h3>
+                        <p>Playa Hermosa – Refugio Punta Mala</p>
+                        <a href="tel:+50622973013">+506 2297 3013</a>
+                        <a href="mailto:zoraida@corcovadofoundation.org">zoraida@corcovadofoundation.org</a>
+                    </div>
+                    <div class="contact-card reveal">
+                        <h3>Biohostel y Voluntariado</h3>
+                        <p>El Progreso de Drake, Península de Osa</p>
+                        <a href="tel:+50688142057">+506 8814 2057</a>
+                        <a href="mailto:info@corcovadofoundation.org">info@corcovadofoundation.org</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="section-pad">
+            <div class="container shell">
+                <div class="section-heading reveal">
+                    <h2>Envíanos un Mensaje</h2>
+                    <p>Completa el formulario a continuación y nuestro equipo se pondrá en contacto contigo en un plazo de 48 horas.</p>
+                </div>
+                
+                <form class="contact-form reveal" id="contactForm" action="#" method="POST">
+                    <div class="form-row">
+                        <div class="field-stack">
+                            <label for="fullName">Nombre Completo</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="field-stack">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="field-stack">
+                            <label for="phone">Teléfono (Opcional)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="field-stack">
+                            <label for="subject">Asunto</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Selecciona un tema</option>
+                                <option value="volunteering">Consulta de Voluntariado</option>
+                                <option value="donations">Donaciones</option>
+                                <option value="partnerships">Alianzas Corporativas</option>
+                                <option value="media">Prensa y Medios</option>
+                                <option value="general">Consulta General</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field-stack">
+                        <label for="message">Tu Mensaje</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <div class="form-actions" style="margin-top: 24px;">
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="section-pad">
+            <div class="container shell">
+                <div class="donate-strip reveal">
+                    <div>
+                        <h2>Apoya Nuestra Misión</h2>
+                        <p>Cada conexión fortalece nuestro trabajo de conservación. Ya sea a través de un mensaje, una donación o una solicitud de voluntariado, estás ayudando a proteger uno de los lugares con mayor biodiversidad del planeta.</p>
+                    </div>
+                    <div class="cta-row">
+                        <a href="donate-now.html" class="btn btn-primary">Donar Ahora</a>
+                        <a href="volunteering.html" class="btn btn-secondary">Hazte Voluntario</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="siteFooter" class="site-footer">
+        <div class="container shell footer-grid">
+            <div class="footer-col">
+                <img src="../assets/img/logo.png" alt="Fundación Corcovado" style="width: 140px; margin-bottom: 16px;">
+                <p style="color: var(--muted);">Guardianes de uno de los lugares más biodiversos del planeta.</p>
+                <div class="footer-social" style="margin-top: 20px;">
+                    <a href="https://facebook.com/corcovadofoundation" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook">FB</a>
+                    <a href="https://instagram.com/corcovadofoundation" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">IG</a>
+                    <a href="mailto:info@corcovadofoundation.org" class="social-icon" aria-label="Email">@</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Explora</h4>
+                <ul class="footer-links">
+                    <li><a href="about-us.html">Nosotros</a></li>
+                    <li><a href="programs.html">Nuestros Programas</a></li>
+                    <li><a href="volunteering.html">Participar</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Apoya</h4>
+                <ul class="footer-links">
+                    <li><a href="donate-now.html">Donar Ahora</a></li>
+                    <li><a href="sponsors.html">Patrocinadores</a></li>
+                    <li><a href="contact-us.html">Contáctanos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center" style="padding: 24px 0; border-top: 1px solid var(--line);">
+            <p>&copy; 2026 Fundación Corcovado. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
