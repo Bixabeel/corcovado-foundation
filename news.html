@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News & Stories - Corcovado Foundation</title>
-    <meta name="description" content="Stay updated with the latest from the Osa Peninsula. Field updates, community stories, and conservation milestones.">
+    <meta name="description" content="Stay updated with the latest from the Osa Peninsula. Field updates, stories, and conservation milestones.">
     <link rel="alternate" hreflang="es" href="/es/news.html">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -15,41 +15,115 @@
             <a href="index.html" class="brand"><img src="assets/img/logo.png" alt="Corcovado Foundation Logo"></a>
             <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
             <nav id="siteNav" class="site-nav">
-                <div class="nav-top"><div class="lang-switch"><a href="news.html" class="lang-link is-active">EN</a><a href="es/news.html" class="lang-link">ES</a></div><a href="donate-now.html" class="btn btn-primary donate-btn">Donate Now</a></div>
-                <a href="index.html">Home</a><a href="about-us.html">About Us</a><a href="programs.html">Our Programs</a><a href="volunteering.html">How to Get Involved</a><a href="contact-us.html">Contact Us</a>
+                <div class="nav-top">
+                    <div class="lang-switch">
+                        <a href="news.html" class="lang-link is-active">EN</a>
+                        <a href="es/news.html" class="lang-link">ES</a>
+                    </div>
+                    <a href="donate-now.html" class="btn btn-primary donate-btn">Donate Now</a>
+                </div>
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="programs.html">Our Programs</a>
+                <a href="volunteering.html">How to Get Involved</a>
+                <a href="contact-us.html">Contact Us</a>
             </nav>
         </div>
     </header>
-
     <main id="main">
-        <div class="container shell"><nav class="breadcrumb"><a href="index.html">Home</a> <span class="sep">/</span> News & Stories</nav></div>
-
-        <section class="section-pad">
+        <div class="container shell">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html">Home</a> <span class="sep">/</span> News & Stories
+            </nav>
+        </div>
+        
+        <!-- HERO NEWS -->
+        <section class="hero">
+            <div class="hero-media">
+                <img src="assets/img/3.webp" alt="Conservation stories">
+            </div>
+            <div class="hero-overlay"></div>
             <div class="container shell">
-                <div class="section-heading reveal"><h2>Field Updates, Stories, and Conservation Milestones</h2><p>Stay updated with the latest from the Osa Peninsula. We share clear, factual updates from our conservation work, community partnerships, and wildlife victories.</p></div>
-                <div class="story-grid">
-                    <article class="story-card reveal"><h3>Record-breaking sea turtle nesting season in Punta Mala</h3><p>Our teams protected over 2,500 nests this season, marking a 15% increase from last year thanks to community vigilance.</p><a href="#" class="card-link">Read full story</a></article>
-                    <article class="story-card reveal"><h3>Local schools lead the way in environmental education</h3><p>Students from El Progreso de Drake designed their own reforestation project, planting 200 native trees in their community.</p><a href="#" class="card-link">Read full story</a></article>
-                    <article class="story-card reveal"><h3>New trail infrastructure improves visitor experience</h3><p>Thanks to our National Park Support program, 15km of trails have been restored to ensure safe and sustainable ecotourism.</p><a href="#" class="card-link">Read full story</a></article>
+                <div class="hero-grid">
+                    <div class="hero-copy">
+                        <h1>Field Updates, Stories, and Conservation Milestones</h1>
+                        <p class="hero-lead">Stay updated with the latest from the Osa Peninsula. We share clear, factual updates from our conservation work, community partnerships, and wildlife victories.</p>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <section class="section-pad" style="background: var(--bg2);">
+        
+        <section class="section-pad section-white">
             <div class="container shell">
-                <div class="donate-strip reveal"><div><h2>Stay connected</h2><p>Want to be part of the next story? Support our work and help us create more positive milestones for Corcovado National Park.</p></div><div class="cta-row"><a href="donate-now.html" class="btn btn-primary">Donate now</a><a href="volunteering.html" class="btn btn-secondary">Join us in the field</a></div></div>
+                <div class="story-grid">
+                    <article class="story-card reveal">
+                        <h3>Record-breaking sea turtle nesting season in Punta Mala</h3>
+                        <p>Our teams protected over 2,500 nests this season, marking a 15% increase from last year thanks to community vigilance.</p>
+                        <a href="#" class="card-link">Read full story</a>
+                    </article>
+                    <article class="story-card reveal">
+                        <h3>Local schools lead the way in environmental education</h3>
+                        <p>Students from El Progreso de Drake designed their own reforestation project, planting 200 native trees in their community.</p>
+                        <a href="#" class="card-link">Read full story</a>
+                    </article>
+                    <article class="story-card reveal">
+                        <h3>New trail infrastructure improves visitor experience</h3>
+                        <p>Thanks to our National Park Support program, 15km of trails have been restored to ensure safe and sustainable ecotourism.</p>
+                        <a href="#" class="card-link">Read full story</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-pad section-green-light">
+            <div class="container shell">
+                <div class="final-cta reveal">
+                    <div>
+                        <h2>Stay connected</h2>
+                        <p>Want to be part of the next story? Support our work and help us create more positive milestones for Corcovado National Park.</p>
+                    </div>
+                    <div class="cta-row">
+                        <a href="donate-now.html" class="btn btn-primary">Donate now</a>
+                        <a href="volunteering.html" class="btn btn-secondary">Join us in the field</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-
     <footer class="site-footer">
         <div class="container shell footer-grid">
-            <div class="footer-brand"><img src="assets/img/logo-border.png" alt="Corcovado Foundation"><p class="footer-text">Conservation, education, and community partnership in Costa Rica.</p><div class="footer-social"><a href="https://www.facebook.com/funcorco/" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook">FB</a><a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">IG</a><a href="mailto:info@corcovadofoundation.org" class="social-icon" aria-label="Email">@</a></div></div>
-            <div class="footer-col"><h3>Explore</h3><a href="about-us.html" class="footer-link">About Us</a><a href="programs.html" class="footer-link">Our Programs</a><a href="volunteering.html" class="footer-link">Get Involved</a><a href="contact-us.html" class="footer-link">Contact Us</a></div>
-            <div class="footer-col"><h3>Donate</h3><a href="donate-now.html" class="footer-link">Donate now</a><a href="sponsors.html" class="footer-link">Sponsors</a><a href="allies.html" class="footer-link">Allies</a></div>
-            <div class="footer-col"><h3>Languages</h3><a href="index.html" class="footer-link">English</a><a href="es/index.html" class="footer-link">Spanish</a></div>
+            <div class="footer-brand">
+                <img src="assets/img/logo-border.png" alt="Corcovado Foundation">
+                <p class="footer-text">Conservation, education, and community partnership in Costa Rica.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/funcorco/" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook">FB</a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">IG</a>
+                    <a href="mailto:info@corcovadofoundation.org" class="social-icon" aria-label="Email">@</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Explore</h3>
+                <a href="about-us.html" class="footer-link">About Us</a>
+                <a href="programs.html" class="footer-link">Our Programs</a>
+                <a href="volunteering.html" class="footer-link">Get Involved</a>
+                <a href="contact-us.html" class="footer-link">Contact Us</a>
+            </div>
+            <div class="footer-col">
+                <h3>Donate</h3>
+                <a href="donate-now.html" class="footer-link">Donate now</a>
+                <a href="sponsors.html" class="footer-link">Sponsors</a>
+                <a href="allies.html" class="footer-link">Allies</a>
+            </div>
+            <div class="footer-col">
+                <h3>Languages</h3>
+                <a href="index.html" class="footer-link">English</a>
+                <a href="es/index.html" class="footer-link">Spanish</a>
+            </div>
         </div>
-        <div class="container shell footer-bottom"><p>© 2026 Corcovado Foundation. All rights reserved</p><a href="#siteHeader">Back to top</a></div>
+        <div class="container shell footer-bottom">
+            <p>© 2026 Corcovado Foundation. All rights reserved</p>
+            <a href="#siteHeader">Back to top</a>
+        </div>
     </footer>
     <script src="assets/js/main.js"></script>
 </body>

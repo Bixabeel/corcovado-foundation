@@ -4,20 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestros Programas - Fundación Corcovado</title>
-    <meta name="description" content="Explora los cuatro programas centrales de la Fundación Corcovado: Educación Ambiental, Restauración de Ecosistemas, Tortugas Marinas y Apoyo al Parque Nacional.">
+    <meta name="description" content="Explora los programas de conservación de la Fundación Corcovado: educación ambiental, restauración de ecosistemas, conservación de tortugas marinas y apoyo al parque nacional.">
     <link rel="alternate" hreflang="en" href="/programs.html">
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body>
-    <!-- Header / Nav -->
+    <a href="#main" class="skip-link">Saltar al contenido</a>
     <header id="siteHeader" class="site-header">
         <div class="container shell header-shell">
-            <a href="index.html" class="brand">
-                <img src="../assets/img/logo.png" alt="Logo Fundación Corcovado">
-            </a>
-            <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
+            <a href="index.html" class="brand"><img src="../assets/img/logo.png" alt="Logo Fundación Corcovado"></a>
+            <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
             <nav id="siteNav" class="site-nav">
                 <div class="nav-top">
                     <div class="lang-switch">
@@ -34,20 +30,24 @@
             </nav>
         </div>
     </header>
-
-    <main>
-        <!-- Hero / Intro -->
-        <section class="section-pad">
+    <main id="main">
+        <!-- HERO PROGRAMS -->
+        <section class="hero">
+            <div class="hero-media">
+                <img src="../assets/img/causa1.jpg" alt="Programa de educación ambiental">
+            </div>
+            <div class="hero-overlay"></div>
             <div class="container shell">
-                <div class="section-heading reveal">
-                    <h2>Nuestros Programas</h2>
-                    <p>Cuatro pilares interconectados, un sistema de conservación. Cada programa aborda una capa diferente de la misma misión: proteger ecosistemas, educar a las comunidades y crear resultados duraderos para la naturaleza y las personas.</p>
+                <div class="hero-grid">
+                    <div class="hero-copy">
+                        <h1>Nuestros Programas</h1>
+                        <p class="hero-lead">Cuatro pilares interconectados, un sistema de conservación. Cada programa aborda una capa diferente de la misma misión: proteger ecosistemas, educar a las comunidades y crear resultados duraderos para la naturaleza y las personas.</p>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <!-- Programs Grid -->
-        <section class="section-pad-tight">
+        
+        <section class="section-pad section-white">
             <div class="container shell">
                 <div class="program-grid">
                     <article class="program-card reveal">
@@ -85,91 +85,86 @@
                 </div>
             </div>
         </section>
-
-        <!-- Cross Navigation: Building Life Together -->
-        <section class="section-pad">
+        
+        <section class="section-pad section-green-light">
             <div class="container shell">
                 <div class="section-heading reveal">
                     <h2>Construyendo Vida Juntos</h2>
                     <p>Cada programa es parte de un ecosistema de conservación más grande. Descubre cómo trabajan juntos para proteger Corcovado.</p>
                 </div>
-                <div class="cause-grid">
-                    <div class="cause-card reveal">
-                        <div class="cause-card-body">
-                            <h3>Educación Ambiental</h3>
-                            <p>Conoce más sobre nuestras iniciativas educativas.</p>
-                            <a href="environmental-education.html" class="card-link">Saber más →</a>
-                        </div>
+                <div class="trust-grid three">
+                    <div class="trust-card reveal">
+                        <span class="trust-label">Educación Ambiental</span>
+                        <p>Conoce más sobre nuestras iniciativas educativas.</p>
+                        <a href="environmental-education.html" class="card-link">Saber más →</a>
                     </div>
-                    <div class="cause-card reveal">
-                        <div class="cause-card-body">
-                            <h3>Restauración de Ecosistemas</h3>
-                            <p>Descubre nuestros esfuerzos de reforestación y monitoreo.</p>
-                            <a href="ecosystem-restoration.html" class="card-link">Saber más →</a>
-                        </div>
+                    <div class="trust-card reveal">
+                        <span class="trust-label">Restauración de Ecosistemas</span>
+                        <p>Descubre nuestros esfuerzos de reforestación y monitoreo.</p>
+                        <a href="ecosystem-restoration.html" class="card-link">Saber más →</a>
                     </div>
-                    <div class="cause-card reveal">
-                        <div class="cause-card-body">
-                            <h3>Conservación de Tortugas Marinas</h3>
-                            <p>Únete a nosotros en la protección de la vida marina.</p>
-                            <a href="sea-turtles.html" class="card-link">Saber más →</a>
-                        </div>
+                    <div class="trust-card reveal">
+                        <span class="trust-label">Conservación de Tortugas Marinas</span>
+                        <p>Únete a nosotros en la protección de la vida marina.</p>
+                        <a href="sea-turtles.html" class="card-link">Saber más →</a>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Donate Strip -->
-        <section class="section-pad-tight">
+        
+        <section class="section-pad section-white">
             <div class="container shell">
-                <div class="donate-strip reveal">
-                    <div>
+                <div class="split-grid-wrap">
+                    <div class="split-copy reveal">
                         <h2>Apoya Nuestro Trabajo</h2>
                         <p>Tu contribución hace posibles estos programas. Cada donación financia directamente la conservación, la educación y el desarrollo comunitario en la Península de Osa.</p>
+                        <div class="hero-actions">
+                            <a href="donate-now.html" class="btn btn-primary">Donar Ahora</a>
+                            <a href="contact-us.html" class="btn btn-secondary">Contáctanos</a>
+                        </div>
                     </div>
-                    <div class="cta-row">
-                        <a href="donate-now.html" class="btn btn-primary">Donar Ahora</a>
-                        <a href="contact-us.html" class="btn btn-secondary">Contáctanos</a>
+                    <div class="split-media reveal">
+                        <img src="../assets/img/corcovado.webp" alt="Guardianes de la biodiversidad">
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
-    <!-- Footer -->
-    <footer id="siteFooter" class="site-footer">
+    <footer class="site-footer">
         <div class="container shell footer-grid">
-            <div class="footer-col">
-                <img src="../assets/img/logo.png" alt="Fundación Corcovado" style="width: 140px; margin-bottom: 16px;">
-                <p style="color: var(--muted);">Guardianes de uno de los lugares más biodiversos del planeta.</p>
-                <div class="footer-social" style="margin-top: 20px;">
-                    <a href="https://facebook.com/corcovadofoundation" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook">FB</a>
-                    <a href="https://instagram.com/corcovadofoundation" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">IG</a>
+            <div class="footer-brand">
+                <img src="../assets/img/logo-border.png" alt="Fundación Corcovado">
+                <p class="footer-text">Conservación, educación y alianzas comunitarias en Costa Rica.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/funcorco/" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook">FB</a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">IG</a>
                     <a href="mailto:info@corcovadofoundation.org" class="social-icon" aria-label="Email">@</a>
                 </div>
             </div>
             <div class="footer-col">
-                <h4>Explora</h4>
-                <ul class="footer-links">
-                    <li><a href="about-us.html">Nosotros</a></li>
-                    <li><a href="programs.html">Nuestros Programas</a></li>
-                    <li><a href="volunteering.html">Participar</a></li>
-                </ul>
+                <h3>Explorar</h3>
+                <a href="about-us.html" class="footer-link">Nosotros</a>
+                <a href="our-impact.html" class="footer-link">Nuestro Impacto</a>
+                <a href="volunteering.html" class="footer-link">Participar</a>
+                <a href="contact-us.html" class="footer-link">Contáctanos</a>
             </div>
             <div class="footer-col">
-                <h4>Apoya</h4>
-                <ul class="footer-links">
-                    <li><a href="donate-now.html">Donar Ahora</a></li>
-                    <li><a href="sponsors.html">Patrocinadores</a></li>
-                    <li><a href="contact-us.html">Contáctanos</a></li>
-                </ul>
+                <h3>Donar</h3>
+                <a href="donate-now.html" class="footer-link">Donar ahora</a>
+                <a href="sponsors.html" class="footer-link">Patrocinadores</a>
+                <a href="allies.html" class="footer-link">Aliados</a>
+            </div>
+            <div class="footer-col">
+                <h3>Idiomas</h3>
+                <a href="../index.html" class="footer-link">Inglés</a>
+                <a href="index.html" class="footer-link">Español</a>
             </div>
         </div>
-        <div class="footer-bottom text-center" style="padding: 24px 0; border-top: 1px solid var(--line);">
-            <p>&copy; 2026 Fundación Corcovado. Todos los derechos reservados.</p>
+        <div class="container shell footer-bottom">
+            <p>© 2026 Fundación Corcovado. Todos los derechos reservados</p>
+            <a href="#siteHeader">Volver arriba</a>
         </div>
     </footer>
-
     <script src="../assets/js/main.js"></script>
 </body>
 </html>
