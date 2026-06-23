@@ -12,8 +12,8 @@
 
   <header class="site-header" id="siteHeader">
     <div class="container header-shell">
-      <a href="index.html" class="brand">
-        <img src="../assets/img/logo1.png" alt="Fundación Corcovado">
+      <a href="../index.html" class="brand">
+        <img src="../assets/img/logo_en.png" alt="Fundación Corcovado">
       </a>
       <nav class="site-nav" id="siteNav">
         <div class="nav-top">
@@ -31,7 +31,7 @@
           <a href="contact-us.html" class="nav-link">Contáctanos</a>
         </div>
       </nav>
-      <button class="nav-toggle" aria-label="Abrir menú">
+      <button class="nav-toggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -50,99 +50,146 @@
             <h1>Genera un impacto hoy</h1>
             <p class="hero-lead">Tu apoyo se convierte en acción en el terreno. Cada donación financia directamente programas de conservación que protegen ecosistemas, educan comunidades y salvaguardan especies en peligro en el Parque Nacional Corcovado.</p>
             <div class="hero-actions">
-              <a href="#como-donar" class="btn btn-primary">Dona ahora</a>
-              <a href="#por-que-donar" class="btn btn-secondary">Saber más</a>
+              <a href="#donation-flow" class="btn btn-primary">Dona ahora</a>
+              <a href="#why-donate" class="btn btn-secondary">Ver nuestro impacto</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-pad section-white" id="como-donar">
+    <section class="section-pad section-white" id="donation-flow">
       <div class="container shell">
+        <div class="section-heading reveal" style="text-align:center; margin: 0 auto 32px;">
+          <span class="flow-eyebrow" style="display:block; text-align:center; margin-bottom:12px;">Donación Segura</span>
+          <h2>Protege el Futuro de Corcovado</h2>
+          <p style="max-width:680px; margin:0 auto;">Únete a los guardianes de uno de los últimos lugares salvajes de la Tierra. Tu donación alimenta la lucha por preservar esta selva irremplazable para las generaciones venideras.</p>
+        </div>
+
         <div class="donation-panel">
           <div class="donation-flow reveal" data-donation-flow>
             <div class="flow-head">
               <div>
-                <h3>Cómo donar</h3>
-                <p>Selecciona un monto para apoyar nuestro trabajo de conservación. Serás redirigido a nuestro socio de pago seguro.</p>
+                <h3>Tu Regalo, Su Futuro</h3>
+                <p>Cada dólar se convierte en botas en el terreno, semillas en el suelo y esperanza para especies en peligro.</p>
+              </div>
+              <div class="flow-pills">
+                <span class="flow-pill">🔒 Cifrado SSL</span>
+                <span class="flow-pill">Deducible (EE.UU.)</span>
               </div>
             </div>
 
-            <div class="flow-section">
-              <span class="flow-label">Selecciona Monto (USD)</span>
-              <div class="amount-grid">
-                <button type="button" class="amount-btn" data-amount="25">
-                  <span class="amount-value">$25</span>
-                  <span class="amount-impact">Planta 5 árboles nativos</span>
-                </button>
-                <button type="button" class="amount-btn is-active" data-amount="50">
-                  <span class="amount-value">$50</span>
-                  <span class="amount-impact">Apoya 1 semana de patrullajes</span>
-                </button>
-                <button type="button" class="amount-btn" data-amount="100">
-                  <span class="amount-value">$100</span>
-                  <span class="amount-impact">Financia un taller escolar</span>
-                </button>
-                <button type="button" class="amount-btn" data-amount="250">
-                  <span class="amount-value">$250</span>
-                  <span class="amount-impact">Equipa a un guardaparques</span>
-                </button>
-                <button type="button" class="amount-btn" data-amount="500">
-                  <span class="amount-value">$500</span>
-                  <span class="amount-impact">Restaura 100m² de hábitat</span>
-                </button>
-                <button type="button" class="amount-btn" data-amount="custom">
-                  <span class="amount-value">Otro</span>
-                  <span class="amount-impact">Cualquier monto ayuda</span>
-                </button>
+            <div class="classy-embed-wrapper">
+              <div class="classy-inline-embed" id="classyEmbed"></div>
+              <div class="classy-loading" id="classyLoading">
+                <div class="classy-spinner"></div>
+                <span>Cargando formulario de pago seguro…</span>
+              </div>
+              <div class="classy-error" id="classyError" style="display:none; padding:32px; text-align:center; background:rgba(255,240,240,.8); border:2px solid #e74c3c; border-radius:14px; margin-top:16px;">
+                <svg style="width:48px; height:48px; color:#e74c3c; margin-bottom:12px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="12" y1="8" x2="12" y2="12"/>
+                  <line x1="12" y1="16" x2="12.01" y2="16"/>
+                </svg>
+                <h4 style="color:#c0392b; margin:0 0 8px;">Formulario de Pago No Disponible</h4>
+                <p style="color:#666; margin:0 0 16px;">Estamos experimentando dificultades técnicas. Por favor, intenta nuestro portal seguro de donaciones:</p>
+                <a href="https://www.amigosofcostarica.org/affiliates/fundacion-corcovado" target="_blank" rel="noopener" class="btn btn-primary">Donar vía Amigos of Costa Rica</a>
               </div>
             </div>
 
-            <div class="flow-section">
-              <span class="flow-label">Socio Oficial de Donación</span>
-              <div class="route-card is-active">
-                <h4>Amigos de Costa Rica</h4>
-                <p>Pago rápido y confiable con tarjeta. Deducible de impuestos en EE.UU. Este es el canal oficial y único de donación para la Fundación Corcovado.</p>
-                <div class="route-meta">
-                  <span class="meta-chip">Deducible (EE.UU.)</span>
-                  <span class="meta-chip">Seguro</span>
-                  <span class="meta-chip">Socio Oficial</span>
+            <div class="trust-band-inline">
+              <div class="trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <div>
+                  <strong>Pago Seguro</strong>
+                  <span>Cifrado de 256 bits</span>
+                </div>
+              </div>
+              <div class="trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12V8H6a2 2 0 0 1 0-4h12v4"/><path d="M4 6v12c0 1.1.9 2 2 2h14v-4"/><path d="M18 12a2 2 0 0 0 0 4h4v-4z"/></svg>
+                <div>
+                  <strong>Socio Oficial</strong>
+                  <span>Amigos of Costa Rica</span>
+                </div>
+              </div>
+              <div class="trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                <div>
+                  <strong>Recibo Fiscal</strong>
+                  <span>Enviado automáticamente</span>
                 </div>
               </div>
             </div>
-
-            <div class="donation-actions">
-              <a href="https://www.amigosofcostarica.org/" target="_blank" rel="noopener" class="btn btn-primary" data-donation-continue>Continuar al pago</a>
-              <button type="button" class="copy-btn" data-copy-donation>Copiar resumen</button>
-            </div>
-            <p class="trust-note">Tu transacción es segura. No almacenamos información de tarjetas.</p>
           </div>
 
           <aside class="donation-summary reveal reveal-delay-1">
-            <h4>Resumen de Donación</h4>
-            <div class="summary-row">
-              <span>Monto</span>
-              <span data-selected-amount>$50</span>
+            <h4>Por Qué Tu Regalo Importa</h4>
+            <div class="impact-list">
+              <div class="impact-item">
+                <strong>1,200+</strong>
+                <span>Niños empoderados mediante educación ambiental</span>
+              </div>
+              <div class="impact-item">
+                <strong>2,500+</strong>
+                <span>Nidos de tortugas protegidos de cazadores furtivos</span>
+              </div>
+              <div class="impact-item">
+                <strong>180,000+</strong>
+                <span>Crías liberadas con seguridad al Océano Pacífico</span>
+              </div>
+              <div class="impact-item">
+                <strong>50,000+</strong>
+                <span>Árboles nativos plantados para restaurar hábitats</span>
+              </div>
             </div>
-            <div class="summary-row">
-              <span>Ruta</span>
-              <span data-selected-route>Amigos de Costa Rica</span>
-            </div>
-            <div class="summary-row">
-              <span>Frecuencia</span>
-              <span id="summary_frequency">Única vez</span>
-            </div>
-            <div class="summary-row">
-              <span>Proyecto</span>
-              <span id="summary_project">Fondo General</span>
+
+            <div class="summary-divider"></div>
+
+            <h4>A Dónde Va Tu Donación</h4>
+            <ul class="support-list-premium">
+              <li>
+                <span class="support-icon">📚</span>
+                <div>
+                  <strong>Educación Ambiental</strong>
+                  <span>Transformando comunidades locales en campeones de la conservación</span>
+                </div>
+              </li>
+              <li>
+                <span class="support-icon">🌱</span>
+                <div>
+                  <strong>Restauración de Ecosistemas</strong>
+                  <span>Sanando bosques heridos en la Península de Osa</span>
+                </div>
+              </li>
+              <li>
+                <span class="support-icon">🐢</span>
+                <div>
+                  <strong>Conservación de Tortugas Marinas</strong>
+                  <span>Custodiando antiguos navegantes en playas del Pacífico</span>
+                </div>
+              </li>
+              <li>
+                <span class="support-icon">🛡️</span>
+                <div>
+                  <strong>Apoyo al Parque Nacional</strong>
+                  <span>Equipando guardaparques que defienden este tesoro biológico</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="summary-divider"></div>
+
+            <div class="partner-badge">
+              <span class="partner-label">Patrocinador Fiscal Oficial</span>
+              <strong>Amigos of Costa Rica</strong>
+              <p>Una organización sin fines de lucro 501(c)(3). Tu donación es deducible de impuestos en EE.UU.</p>
             </div>
           </aside>
         </div>
       </div>
     </section>
 
-    <section class="section-pad section-green-light" id="por-que-donar">
+    <section class="section-pad section-green-light" id="why-donate">
       <div class="container shell">
         <div class="section-heading reveal">
           <h2>Resultados Reales, Cambios Tangibles</h2>
@@ -151,71 +198,24 @@
         <div class="stats-grid">
           <div class="stat-card reveal">
             <strong data-count="1200">0</strong>
-            <span>niños en programas educativos</span>
+            <span>Niños en programas educativos</span>
           </div>
           <div class="stat-card reveal reveal-delay-1">
             <strong data-count="2500">0</strong>
-            <span>nidos de tortugas protegidos</span>
+            <span>Nidos de tortugas protegidos</span>
           </div>
           <div class="stat-card reveal reveal-delay-2">
             <strong data-count="180000">0</strong>
-            <span>crías liberadas al mar</span>
+            <span>Crías liberadas al mar</span>
           </div>
           <div class="stat-card reveal reveal-delay-3">
             <strong data-count="50000">0</strong>
-            <span>árboles nativos plantados</span>
+            <span>Árboles nativos plantados</span>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="section-pad section-white">
-      <div class="container shell">
-        <div class="section-heading reveal">
-          <h2>Elige tu impacto</h2>
-          <p>Cada programa aborda una capa diferente de nuestra misión de conservación. Elige dónde tendrá mayor impacto tu apoyo.</p>
-        </div>
-        <div class="program-grid">
-          <article class="program-card reveal">
-            <img src="../assets/img/program-education.webp" alt="Educación Ambiental">
-            <div class="program-card-body">
-              <span class="program-tag">Educación</span>
-              <h3>Educación Ambiental</h3>
-              <p>Fortalecemos el liderazgo local y la gestión comunitaria a través de programas educativos prácticos.</p>
-              <a href="environmental-education.html" class="card-link">Saber más</a>
-            </div>
-          </article>
-          <article class="program-card reveal reveal-delay-1">
-            <img src="../assets/img/program-restoration.webp" alt="Restauración de Ecosistemas">
-            <div class="program-card-body">
-              <span class="program-tag">Restauración</span>
-              <h3>Restauración de Ecosistemas</h3>
-              <p>Reforestación, monitoreo ecológico y recuperación de hábitats basada en la comunidad en la Península de Osa.</p>
-              <a href="ecosystem-restoration.html" class="card-link">Saber más</a>
-            </div>
-          </article>
-          <article class="program-card reveal reveal-delay-2">
-            <img src="../assets/img/program-turtles.webp" alt="Conservación de Tortugas Marinas">
-            <div class="program-card-body">
-              <span class="program-tag">Conservación</span>
-              <h3>Conservación de Tortugas Marinas</h3>
-              <p>Protección y reubicación de nidos a lo largo de playas clave de anidación en la costa del Pacífico.</p>
-              <a href="sea-turtles.html" class="card-link">Saber más</a>
-            </div>
-          </article>
-          <article class="program-card reveal reveal-delay-3">
-            <img src="../assets/img/program-park.webp" alt="Apoyo al Parque Nacional">
-            <div class="program-card-body">
-              <span class="program-tag">Apoyo</span>
-              <h3>Apoyo al Parque Nacional</h3>
-              <p>Fortalecimiento del Parque Nacional Corcovado a través de infraestructura, apoyo a guardaparques y educación al visitante.</p>
-              <a href="national-park-support.html" class="card-link">Saber más</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
+	
     <section class="section-pad">
       <div class="container shell">
         <div class="final-cta reveal">
@@ -223,7 +223,7 @@
           <p>Juntos podemos proteger Corcovado para las futuras generaciones. Cada donación, sin importar el tamaño, contribuye a proteger uno de los lugares más biodiversos del planeta.</p>
           <div class="cta-row">
             <a href="contact-us.html" class="btn btn-primary">Contáctanos</a>
-            <a href="index.html" class="btn btn-secondary">Volver al inicio</a>
+            <a href="../index.html" class="btn btn-secondary">Volver al inicio</a>
           </div>
         </div>
       </div>
@@ -234,7 +234,7 @@
     <div class="container shell">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="../assets/img/logo1.png" alt="Fundación Corcovado">
+          <img src="../assets/img/logo_en.png" alt="Fundación Corcovado">
           <p class="footer-text">Conservación, educación y alianzas comunitarias en Costa Rica.</p>
           <div class="footer-social">
             <a href="https://www.facebook.com/funcorco/" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener">
@@ -273,6 +273,51 @@
       </div>
     </div>
   </footer>
+
+  <!-- Classy.org Inline Embed Script -->
+  <script>
+    (function() {
+      var campaignId = '568425';
+      var embedContainer = document.getElementById('classyEmbed');
+      var loadingEl = document.getElementById('classyLoading');
+      var errorEl = document.getElementById('classyError');
+      
+      var loadTimeout = setTimeout(function() {
+        if (loadingEl && loadingEl.style.display !== 'none') {
+          loadingEl.style.display = 'none';
+          if (errorEl) errorEl.style.display = 'block';
+        }
+      }, 15000);
+      
+      var script = document.createElement('script');
+      script.src = 'https://sdk.classy.org/embedded-giving.js';
+      script.async = true;
+      script.onload = function() {
+        if (window.eg) {
+          window.eg.init({
+            campaignId: campaignId,
+            container: embedContainer,
+            onLoad: function() {
+              clearTimeout(loadTimeout);
+              if (loadingEl) loadingEl.style.display = 'none';
+            },
+            onError: function() {
+              clearTimeout(loadTimeout);
+              if (loadingEl) loadingEl.style.display = 'none';
+              if (errorEl) errorEl.style.display = 'block';
+            }
+          });
+        }
+      };
+      script.onerror = function() {
+        clearTimeout(loadTimeout);
+        if (loadingEl) loadingEl.style.display = 'none';
+        if (errorEl) errorEl.style.display = 'block';
+      };
+      
+      document.body.appendChild(script);
+    })();
+  </script>
 
   <script src="../assets/js/main.js"></script>
 </body>

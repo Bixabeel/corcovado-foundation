@@ -60,82 +60,129 @@
 
     <section class="section-pad section-white" id="donation-flow">
       <div class="container shell">
+        <div class="section-heading reveal" style="text-align:center; margin: 0 auto 32px;">
+          <span class="flow-eyebrow" style="display:block; text-align:center; margin-bottom:12px;">Secure Giving</span>
+          <h2>Protect Corcovado's Future</h2>
+          <p style="max-width:680px; margin:0 auto;">Join the guardians of one of Earth's last wild places. Your donation fuels the fight to preserve this irreplaceable rainforest for generations to come.</p>
+        </div>
+
         <div class="donation-panel">
           <div class="donation-flow reveal" data-donation-flow>
             <div class="flow-head">
               <div>
-                <h3>How to donate</h3>
-                <p>Select an amount to support our conservation work. You'll be redirected to our secure payment partner.</p>
+                <h3>Your Gift, Their Future</h3>
+                <p>Every dollar becomes boots on the ground, seeds in the soil, and hope for endangered species.</p>
+              </div>
+              <div class="flow-pills">
+                <span class="flow-pill">🔒 SSL Encrypted</span>
+                <span class="flow-pill">Tax-deductible (US)</span>
               </div>
             </div>
 
-            <div class="flow-section">
-              <span class="flow-label">Select Amount (USD)</span>
-              <div class="amount-grid">
-                <button type="button" class="amount-btn" data-amount="25">
-                  <span class="amount-value">$25</span>
-                  <span class="amount-impact">Plants 5 native trees</span>
-                </button>
-                <button type="button" class="amount-btn is-active" data-amount="50">
-                  <span class="amount-value">$50</span>
-                  <span class="amount-impact">Supports 1 week of turtle patrols</span>
-                </button>
-                <button type="button" class="amount-btn" data-amount="100">
-                  <span class="amount-value">$100</span>
-                  <span class="amount-impact">Funds a school workshop</span>
-                </button>
-                <button type="button" class="amount-btn" data-amount="250">
-                  <span class="amount-value">$250</span>
-                  <span class="amount-impact">Equips a park ranger</span>
-                </button>
-                <button type="button" class="amount-btn" data-amount="500">
-                  <span class="amount-value">$500</span>
-                  <span class="amount-impact">Restores 100m² of habitat</span>
-                </button>
-                <button type="button" class="amount-btn" data-amount="custom">
-                  <span class="amount-value">Custom</span>
-                  <span class="amount-impact">Any amount helps</span>
-                </button>
+            <div class="classy-embed-wrapper">
+              <div class="classy-inline-embed" id="classyEmbed"></div>
+              <div class="classy-loading" id="classyLoading">
+                <div class="classy-spinner"></div>
+                <span>Loading secure payment form…</span>
+              </div>
+              <div class="classy-error" id="classyError" style="display:none; padding:32px; text-align:center; background:rgba(255,240,240,.8); border:2px solid #e74c3c; border-radius:14px; margin-top:16px;">
+                <svg style="width:48px; height:48px; color:#e74c3c; margin-bottom:12px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="12" y1="8" x2="12" y2="12"/>
+                  <line x1="12" y1="16" x2="12.01" y2="16"/>
+                </svg>
+                <h4 style="color:#c0392b; margin:0 0 8px;">Payment Form Unavailable</h4>
+                <p style="color:#666; margin:0 0 16px;">We're experiencing technical difficulties. Please try our secure donation portal:</p>
+                <a href="https://www.amigosofcostarica.org/affiliates/fundacion-corcovado" target="_blank" rel="noopener" class="btn btn-primary">Donate via Amigos of Costa Rica</a>
               </div>
             </div>
 
-            <div class="flow-section">
-              <span class="flow-label">Official Donation Partner</span>
-              <div class="route-card is-active">
-                <h4>Amigos of Costa Rica</h4>
-                <p>Fast, trusted card checkout. Tax-deductible in the USA. This is the official and only donation channel for Corcovado Foundation.</p>
-                <div class="route-meta">
-                  <span class="meta-chip">Tax-deductible (US)</span>
-                  <span class="meta-chip">Secure</span>
-                  <span class="meta-chip">Official Partner</span>
+            <div class="trust-band-inline">
+              <div class="trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <div>
+                  <strong>Secure Checkout</strong>
+                  <span>256-bit encryption</span>
+                </div>
+              </div>
+              <div class="trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12V8H6a2 2 0 0 1 0-4h12v4"/><path d="M4 6v12c0 1.1.9 2 2 2h14v-4"/><path d="M18 12a2 2 0 0 0 0 4h4v-4z"/></svg>
+                <div>
+                  <strong>Official Partner</strong>
+                  <span>Amigos of Costa Rica</span>
+                </div>
+              </div>
+              <div class="trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                <div>
+                  <strong>Tax Receipt</strong>
+                  <span>Sent automatically</span>
                 </div>
               </div>
             </div>
-
-            <div class="donation-actions">
-              <a href="https://www.amigosofcostarica.org/" target="_blank" rel="noopener" class="btn btn-primary" data-donation-continue>Continue to checkout</a>
-              <button type="button" class="copy-btn" data-copy-donation>Copy brief</button>
-            </div>
-            <p class="trust-note">Your transaction is secure. We do not store your credit card information.</p>
           </div>
 
           <aside class="donation-summary reveal reveal-delay-1">
-            <h4>Donation Summary</h4>
-            <div class="summary-row">
-              <span>Amount</span>
-              <span data-selected-amount>$50</span>
+            <h4>Why Your Gift Matters</h4>
+            <div class="impact-list">
+              <div class="impact-item">
+                <strong>1,200+</strong>
+                <span>Children empowered through environmental education</span>
+              </div>
+              <div class="impact-item">
+                <strong>2,500+</strong>
+                <span>Sea turtle nests protected from poachers and predators</span>
+              </div>
+              <div class="impact-item">
+                <strong>180,000+</strong>
+                <span>Hatchlings safely released to the Pacific Ocean</span>
+              </div>
+              <div class="impact-item">
+                <strong>50,000+</strong>
+                <span>Native trees planted to restore degraded habitats</span>
+              </div>
             </div>
-            <div class="summary-row">
-              <span>Route</span>
-              <span data-selected-route>Amigos of Costa Rica</span>
-            </div>
-            <div class="summary-row">
-              <span>Frequency</span>
-              <span id="summary_frequency">One-time</span>
-            </div>
-            <div class="summary-row">
-              <span>Project</span>
-              <span id="summary_project">General Fund</span>
+
+            <div class="summary-divider"></div>
+
+            <h4>Where Your Donation Goes</h4>
+            <ul class="support-list-premium">
+              <li>
+                <span class="support-icon">📚</span>
+                <div>
+                  <strong>Environmental Education</strong>
+                  <span>Transforming local communities into conservation champions</span>
+                </div>
+              </li>
+              <li>
+                <span class="support-icon">🌱</span>
+                <div>
+                  <strong>Ecosystem Restoration</strong>
+                  <span>Healing wounded forests in the Osa Peninsula</span>
+                </div>
+              </li>
+              <li>
+                <span class="support-icon">🐢</span>
+                <div>
+                  <strong>Sea Turtle Conservation</strong>
+                  <span>Guarding ancient mariners on Pacific nesting beaches</span>
+                </div>
+              </li>
+              <li>
+                <span class="support-icon">🛡️</span>
+                <div>
+                  <strong>National Park Support</strong>
+                  <span>Equipping rangers who defend this biological treasure</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="summary-divider"></div>
+
+            <div class="partner-badge">
+              <span class="partner-label">Official Fiscal Sponsor</span>
+              <strong>Amigos of Costa Rica</strong>
+              <p>A 501(c)(3) nonprofit. Your donation is tax-deductible in the USA.</p>
             </div>
           </aside>
         </div>
@@ -168,54 +215,6 @@
         </div>
       </div>
     </section>
-
-    <section class="section-pad section-white">
-      <div class="container shell">
-        <div class="section-heading reveal">
-          <h2>Choose your impact</h2>
-          <p>Each program addresses a different layer of our conservation mission. Choose where your support will make the biggest difference.</p>
-        </div>
-        <div class="program-grid">
-          <article class="program-card reveal">
-            <img src="assets/img/program-education.webp" alt="Environmental Education">
-            <div class="program-card-body">
-              <span class="program-tag">Education</span>
-              <h3>Environmental Education</h3>
-              <p>Strengthening local leadership and community stewardship through hands-on education programs.</p>
-              <a href="environmental-education.html" class="card-link">Learn more</a>
-            </div>
-          </article>
-          <article class="program-card reveal reveal-delay-1">
-            <img src="assets/img/program-restoration.webp" alt="Ecosystem Restoration">
-            <div class="program-card-body">
-              <span class="program-tag">Restoration</span>
-              <h3>Ecosystem Restoration</h3>
-              <p>Reforestation, ecological monitoring, and community-based habitat recovery in the Osa Peninsula.</p>
-              <a href="ecosystem-restoration.html" class="card-link">Learn more</a>
-            </div>
-          </article>
-          <article class="program-card reveal reveal-delay-2">
-            <img src="assets/img/program-turtles.webp" alt="Sea Turtle Conservation">
-            <div class="program-card-body">
-              <span class="program-tag">Conservation</span>
-              <h3>Sea Turtle Conservation</h3>
-              <p>Protection and relocation of nests along key nesting beaches in Costa Rica's Pacific coast.</p>
-              <a href="sea-turtles.html" class="card-link">Learn more</a>
-            </div>
-          </article>
-          <article class="program-card reveal reveal-delay-3">
-            <img src="assets/img/program-park.webp" alt="National Park Support">
-            <div class="program-card-body">
-              <span class="program-tag">Support</span>
-              <h3>National Park Support</h3>
-              <p>Strengthening Corcovado National Park through infrastructure, ranger support, and visitor education.</p>
-              <a href="national-park-support.html" class="card-link">Learn more</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <section class="section-pad">
       <div class="container shell">
         <div class="final-cta reveal">
@@ -273,6 +272,101 @@
       </div>
     </div>
   </footer>
+
+  <!-- Classy.org Inline Embed Script -->
+  <script>
+    (function() {
+      var campaignId = '568425';
+      var embedContainer = document.getElementById('classyEmbed');
+      var loadingEl = document.getElementById('classyLoading');
+      var errorEl = document.getElementById('classyError');
+      var loadTimeout;
+      var retryCount = 0;
+      var maxRetries = 2;
+
+      function showError() {
+        if (loadingEl) loadingEl.style.display = 'none';
+        if (errorEl) errorEl.style.display = 'block';
+        console.error('Classy.org failed to load after ' + (retryCount + 1) + ' attempts');
+      }
+
+      function attemptLoad() {
+        // Clear any existing timeout
+        if (loadTimeout) clearTimeout(loadTimeout);
+        
+        // Set longer timeout (25 seconds)
+        loadTimeout = setTimeout(function() {
+          retryCount++;
+          if (retryCount <= maxRetries) {
+            console.log('Retrying Classy.org load (attempt ' + retryCount + ')...');
+            attemptLoad();
+          } else {
+            showError();
+          }
+        }, 25000);
+
+        // Create Classy script
+        var script = document.createElement('script');
+        script.src = 'https://sdk.classy.org/embedded-giving.js';
+        script.async = true;
+        script.id = 'classy-sdk-script';
+        
+        script.onload = function() {
+          console.log('Classy SDK loaded successfully');
+          
+          // Wait a bit for initialization
+          setTimeout(function() {
+            if (window.eg && typeof window.eg.init === 'function') {
+              try {
+                window.eg.init({
+                  campaignId: campaignId,
+                  container: embedContainer,
+                  onLoad: function() {
+                    console.log('Classy form loaded successfully');
+                    clearTimeout(loadTimeout);
+                    if (loadingEl) loadingEl.style.display = 'none';
+                  },
+                  onError: function(err) {
+                    console.error('Classy init error:', err);
+                    clearTimeout(loadTimeout);
+                    showError();
+                  }
+                });
+              } catch (e) {
+                console.error('Error initializing Classy:', e);
+                clearTimeout(loadTimeout);
+                showError();
+              }
+            } else {
+              console.error('Classy SDK loaded but eg.init not found');
+              clearTimeout(loadTimeout);
+              showError();
+            }
+          }, 2000);
+        };
+        
+        script.onerror = function() {
+          console.error('Failed to load Classy SDK script');
+          clearTimeout(loadTimeout);
+          retryCount++;
+          if (retryCount <= maxRetries) {
+            setTimeout(attemptLoad, 2000);
+          } else {
+            showError();
+          }
+        };
+        
+        // Remove old script if exists
+        var oldScript = document.getElementById('classy-sdk-script');
+        if (oldScript) oldScript.remove();
+        
+        document.body.appendChild(script);
+      }
+
+      // Start loading
+      attemptLoad();
+    })();
+  </script>
 
   <script src="assets/js/main.js"></script>
 </body>
