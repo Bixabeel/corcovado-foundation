@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /library/
 
-Sitemap: https://corcovadofoundation.org/sitemap.xml
+Sitemap: https://corcovadofoundation.abundia.io/sitemap.xml

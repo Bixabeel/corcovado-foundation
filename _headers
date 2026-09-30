@@ -1,6 +1,16 @@
 /*
+  Cache / deployment policy
+  - HTML: always revalidate so new deployments are visible immediately.
+  - Fingerprinted CSS: safe to cache long-term because the filename changes on updates.
+*/
+/*
+  Cache-Control: no-cache, must-revalidate
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
   X-Frame-Options: SAMEORIGIN
   Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+/assets/css/*
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
