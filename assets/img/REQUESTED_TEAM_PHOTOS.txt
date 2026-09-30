@@ -1,0 +1,7 @@
+TEAM PHOTOS TO ADD
+
+Place these exact files in this folder when available:
+- Helena-Zulu-150x150.WEBP  -> Helena Pita
+- MariVega-150x150.jpg       -> Mariel Vega Rojas
+
+The HTML and team data already reference these exact filenames. Until the real files are present, the site uses a neutral fallback placeholder so no broken-image icon is displayed.
