@@ -31,6 +31,7 @@ class CF_Settings {
 			'default_og_image'   => 0,
 			'security_headers'   => 1,
 			'legacy_redirects'   => 1,
+			'trust_cloudflare'   => 0,
 		);
 	}
 
@@ -123,7 +124,7 @@ class CF_Settings {
 		$out['form_rate_limit']    = isset( $input['form_rate_limit'] ) ? max( 1, min( 100, absint( $input['form_rate_limit'] ) ) ) : $d['form_rate_limit'];
 		$seo                       = isset( $input['seo_output'] ) ? (string) $input['seo_output'] : 'auto';
 		$out['seo_output']         = in_array( $seo, array( 'auto', 'on', 'off' ), true ) ? $seo : 'auto';
-		foreach ( array( 'org_schema', 'security_headers', 'legacy_redirects' ) as $k ) {
+		foreach ( array( 'org_schema', 'security_headers', 'legacy_redirects', 'trust_cloudflare' ) as $k ) {
 			$out[ $k ] = empty( $input[ $k ] ) ? 0 : 1;
 		}
 		return $out;
@@ -236,6 +237,10 @@ class CF_Settings {
 					<tr>
 						<th scope="row"><?php esc_html_e( 'Legacy .html redirects', 'corcovado-foundation-core' ); ?></th>
 						<td><label><input type="checkbox" name="<?php echo esc_attr( self::OPTION ); ?>[legacy_redirects]" value="1" <?php checked( $s['legacy_redirects'] ); ?>> <?php esc_html_e( 'Redirect old static URLs (/about-us.html, /library/*.pdf…) to their WordPress equivalent with a single 301.', 'corcovado-foundation-core' ); ?></label></td>
+					</tr>
+					<tr>
+						<th scope="row"><?php esc_html_e( 'Behind Cloudflare', 'corcovado-foundation-core' ); ?></th>
+						<td><label><input type="checkbox" name="<?php echo esc_attr( self::OPTION ); ?>[trust_cloudflare]" value="1" <?php checked( $s['trust_cloudflare'] ); ?>> <?php esc_html_e( 'The site is served through the Cloudflare proxy: use the CF-Connecting-IP header to identify visitors in the form rate limit. Enable only if the server accepts traffic from Cloudflare exclusively.', 'corcovado-foundation-core' ); ?></label></td>
 					</tr>
 					<tr>
 						<th scope="row"><?php esc_html_e( 'Security headers', 'corcovado-foundation-core' ); ?></th>

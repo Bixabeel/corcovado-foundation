@@ -113,6 +113,12 @@ class CF_Forms {
 	 */
 	private static function client_ip() {
 		$ip = isset( $_SERVER['REMOTE_ADDR'] ) ? sanitize_text_field( wp_unslash( $_SERVER['REMOTE_ADDR'] ) ) : '';
+		if ( CF_Settings::get( 'trust_cloudflare', 0 ) && ! empty( $_SERVER['HTTP_CF_CONNECTING_IP'] ) ) {
+			$cf = sanitize_text_field( wp_unslash( $_SERVER['HTTP_CF_CONNECTING_IP'] ) );
+			if ( filter_var( $cf, FILTER_VALIDATE_IP ) ) {
+				$ip = $cf;
+			}
+		}
 		/**
 		 * Filters the visitor IP used for rate limiting (e.g. to read CF-Connecting-IP when the
 		 * site is behind Cloudflare and the origin only accepts Cloudflare traffic).
