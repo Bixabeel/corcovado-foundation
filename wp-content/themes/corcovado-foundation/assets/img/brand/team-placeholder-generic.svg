@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-labelledby="title desc">
+<title id="title">Team photo placeholder</title>
+<desc id="desc">Neutral placeholder for a team member photo</desc>
+<rect width="600" height="600" fill="#e8efe9"/>
+<circle cx="300" cy="230" r="105" fill="#b7cdbf"/>
+<path d="M150 500c22-104 86-156 150-156s128 52 150 156" fill="#b7cdbf"/>
+<path d="M110 520h380" stroke="#1f6b4f" stroke-width="8" stroke-linecap="round" opacity=".35"/>
+<path d="M300 120c-55 40-78 85-67 134 44-11 78-45 67-134Z" fill="#2f9e6d" opacity=".85"/>
+<path d="M300 120c55 40 78 85 67 134-44-11-78-45-67-134Z" fill="#1f6b4f" opacity=".85"/>
+</svg>

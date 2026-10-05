@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.5/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": false,
+		"color": {
+			"custom": false,
+			"customGradient": false,
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"palette": []
+		},
+		"typography": {
+			"customFontSize": false,
+			"defaultFontSizes": false
+		},
+		"layout": {
+			"contentSize": "760px",
+			"wideSize": "1180px"
+		},
+		"spacing": {
+			"customSpacingSize": false
+		}
+	}
+}

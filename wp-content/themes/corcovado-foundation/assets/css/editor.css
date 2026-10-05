@@ -1,0 +1,4 @@
+/* Block editor (News): typography close to the front end. */
+body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: #1c231d; line-height: 1.7; }
+a { color: #173528; }
+h1, h2, h3, h4 { color: #173528; }

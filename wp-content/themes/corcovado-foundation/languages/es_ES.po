@@ -1,0 +1,154 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Domain: corcovado-foundation\n"
+
+msgid "Search results for \"%s\""
+msgstr "Resultados de búsqueda para \"%s\""
+
+msgid "Read more"
+msgstr "Leer más"
+
+msgid "Nothing found."
+msgstr "No se encontraron resultados."
+
+msgid "Page not found"
+msgstr "Página no encontrada"
+
+msgid "Back to home"
+msgstr "Volver al inicio"
+
+msgid "Breadcrumb"
+msgstr "Ruta de navegación"
+
+msgid "Home"
+msgstr "Inicio"
+
+msgid "News"
+msgstr "Noticias"
+
+msgid "Back to news"
+msgstr "Volver a noticias"
+
+msgid "Main menu (English)"
+msgstr "Menú principal (inglés)"
+
+msgid "Main menu (Spanish)"
+msgstr "Menú principal (español)"
+
+msgid "Footer column 1 (English)"
+msgstr "Footer columna 1 (inglés)"
+
+msgid "Footer column 2 (English)"
+msgstr "Footer columna 2 (inglés)"
+
+msgid "Footer column 3 (English)"
+msgstr "Footer columna 3 (inglés)"
+
+msgid "Footer column 1 (Spanish)"
+msgstr "Footer columna 1 (español)"
+
+msgid "Footer column 2 (Spanish)"
+msgstr "Footer columna 2 (español)"
+
+msgid "Footer column 3 (Spanish)"
+msgstr "Footer columna 3 (español)"
+
+msgid "Please complete the required fields before continuing."
+msgstr "Completa los campos obligatorios antes de continuar."
+
+msgid "Sending…"
+msgstr "Enviando…"
+
+msgid "Thank you! Your message has been sent."
+msgstr "¡Gracias! Tu mensaje fue enviado."
+
+msgid "Thank you! Your application has been sent. We will get back to you within 48 hours."
+msgstr "¡Gracias! Tu solicitud fue enviada. Te responderemos en un plazo de 48 horas."
+
+msgid "The message could not be sent. Please try again or write to us at %s."
+msgstr "No se pudo enviar el mensaje. Inténtalo de nuevo o escríbenos a %s."
+
+msgid "Too many messages were sent from this connection. Please try again later or write to us at %s."
+msgstr "Se enviaron demasiados mensajes desde esta conexión. Inténtalo más tarde o escríbenos a %s."
+
+msgid "The Corcovado Foundation theme needs the \"Corcovado Foundation Core\" plugin. Please install and activate it."
+msgstr "El tema Corcovado Foundation necesita el plugin \"Corcovado Foundation Core\". Instálalo y actívalo."
+
+msgid "Donate button text"
+msgstr "Texto del botón Donar"
+
+msgid "Donate button link"
+msgstr "Enlace del botón Donar"
+
+msgid "Logo description (alt)"
+msgstr "Descripción del logo (alt)"
+
+msgid "Mobile menu button label"
+msgstr "Etiqueta del botón de menú móvil"
+
+msgid "Main navigation label"
+msgstr "Etiqueta de la navegación principal"
+
+msgid "Language selector label"
+msgstr "Etiqueta del selector de idioma"
+
+msgid "\"Skip to content\" link"
+msgstr "Enlace \"Saltar al contenido\""
+
+msgid "Footer logo description (alt)"
+msgstr "Descripción del logo del footer (alt)"
+
+msgid "Footer text"
+msgstr "Texto del footer"
+
+msgid "Footer column 1 title"
+msgstr "Título de la columna 1 del footer"
+
+msgid "Footer column 2 title"
+msgstr "Título de la columna 2 del footer"
+
+msgid "Footer column 3 title"
+msgstr "Título de la columna 3 del footer"
+
+msgid "Copyright line"
+msgstr "Línea de copyright"
+
+msgid "Credit link text"
+msgstr "Texto del enlace de créditos"
+
+msgid "Credit link"
+msgstr "Enlace de créditos"
+
+msgid "\"Back to top\" link"
+msgstr "Enlace \"Volver arriba\""
+
+msgid "Email icon label"
+msgstr "Etiqueta del icono de correo"
+
+msgid "Facebook URL"
+msgstr "URL de Facebook"
+
+msgid "Instagram URL"
+msgstr "URL de Instagram"
+
+msgid "Email link (mailto:)"
+msgstr "Enlace de correo (mailto:)"
+
+msgid "Header & footer"
+msgstr "Encabezado y footer"
+
+msgid "English texts"
+msgstr "Textos en inglés"
+
+msgid "Spanish texts"
+msgstr "Textos en español"
+
+msgid "Social links"
+msgstr "Redes sociales"
+
+msgid "Menus of the header and footer columns are edited in Appearance → Menus."
+msgstr "Los menús del encabezado y de las columnas del footer se editan en Apariencia → Menús."
+

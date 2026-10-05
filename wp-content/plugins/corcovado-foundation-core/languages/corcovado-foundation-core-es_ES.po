@@ -1,0 +1,577 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Domain: corcovado-foundation-core\n"
+
+msgid "Short title for the home page cards (optional)"
+msgstr "Título corto para las tarjetas de la página de inicio (opcional)"
+
+msgid "Short text for the home page cards (optional, empty = excerpt)"
+msgstr "Texto corto para las tarjetas de la página de inicio (opcional; vacío = extracto)"
+
+msgid "Start date"
+msgstr "Fecha de inicio"
+
+msgid "End date (optional)"
+msgstr "Fecha de fin (opcional)"
+
+msgid "Time (optional)"
+msgstr "Hora (opcional)"
+
+msgid "Location (optional)"
+msgstr "Lugar (opcional)"
+
+msgid "Date as shown on the card (empty = formatted automatically)"
+msgstr "Fecha tal como se muestra en la tarjeta (vacío = formato automático)"
+
+msgid "Description"
+msgstr "Descripción"
+
+msgid "Button text"
+msgstr "Texto del botón"
+
+msgid "Button link (/volunteering, /es/contact-us, https://…)"
+msgstr "Enlace del botón (/volunteering, /es/contact-us, https://…)"
+
+msgid "Role (card)"
+msgstr "Cargo (tarjeta)"
+
+msgid "Note next to the name (e.g. years)"
+msgstr "Nota junto al nombre (p. ej. años)"
+
+msgid "Short summary (card)"
+msgstr "Resumen corto (tarjeta)"
+
+msgid "Full biography (profile window)"
+msgstr "Biografía completa (ventana de perfil)"
+
+msgid "Name in profile window (empty = title)"
+msgstr "Nombre en la ventana de perfil (vacío = título)"
+
+msgid "Role in profile window (empty = card role)"
+msgstr "Cargo en la ventana de perfil (vacío = cargo de la tarjeta)"
+
+msgid "Photo description (alt, empty = name)"
+msgstr "Descripción de la foto (alt; vacío = nombre)"
+
+msgid "Show the generic silhouette if the photo fails to load"
+msgstr "Mostrar la silueta genérica si la foto no carga"
+
+msgid "File to download"
+msgstr "Archivo para descargar"
+
+msgid "File information (e.g. \"PDF | EN | 4.2 MB\")"
+msgstr "Información del archivo (p. ej. \"PDF | EN | 4.2 MB\")"
+
+msgid "Publication date (used for ordering)"
+msgstr "Fecha de publicación (se usa para ordenar)"
+
+msgid "Featured (shown in the first library grid)"
+msgstr "Destacado (se muestra en la primera cuadrícula de la biblioteca)"
+
+msgid "Image description (alt, empty = title)"
+msgstr "Descripción de la imagen (alt; vacío = título)"
+
+msgid "Website"
+msgstr "Sitio web"
+
+msgid "Logo description (alt, empty = name)"
+msgstr "Descripción del logo (alt; vacío = nombre)"
+
+msgid "Sponsor category key (e.g. founding, supporters, gold, silver, bronze; empty = none)"
+msgstr "Clave de categoría de patrocinio (p. ej. founding, supporters, gold, silver, bronze; vacío = ninguna)"
+
+msgid "Language and translation"
+msgstr "Idioma y traducción"
+
+msgid "Details"
+msgstr "Detalles"
+
+msgid "Language"
+msgstr "Idioma"
+
+msgid "Spanish pages are the Spanish home page (/es/) and its child pages. Choose the parent in \"Page Attributes\"."
+msgstr "Las páginas en español son la página de inicio en español (/es/) y sus páginas hijas. Elige la página superior en \"Atributos de página\"."
+
+msgid "Translation"
+msgstr "Traducción"
+
+msgid "— None —"
+msgstr "— Ninguna —"
+
+msgid "Edit translation"
+msgstr "Editar traducción"
+
+msgid "Create translation (draft)"
+msgstr "Crear traducción (borrador)"
+
+msgid "Photo: use \"Featured image\". Group: choose it in \"Team groups\". Order: \"Page Attributes → Order\"."
+msgstr "Foto: usa la \"Imagen destacada\". Grupo: elígelo en \"Grupos del equipo\". Orden: \"Atributos de página → Orden\"."
+
+msgid "Logo: use \"Featured image\". Order: \"Page Attributes → Order\". Partners are shown in both languages."
+msgstr "Logo: usa la \"Imagen destacada\". Orden: \"Atributos de página → Orden\". Los aliados se muestran en ambos idiomas."
+
+msgid "Thumbnail: use \"Featured image\". Category: choose it in \"Resource categories\". To archive a resource, switch it to Draft."
+msgstr "Miniatura: usa la \"Imagen destacada\". Categoría: elígela en \"Categorías de recursos\". Para archivar un recurso, pásalo a Borrador."
+
+msgid "Image: use \"Featured image\" (optional). To unpublish an event, switch it to Draft."
+msgstr "Imagen: usa la \"Imagen destacada\" (opcional). Para despublicar un evento, pásalo a Borrador."
+
+msgid "Choose file"
+msgstr "Elegir archivo"
+
+msgid "Create translation"
+msgstr "Crear traducción"
+
+msgid "You are not allowed to do this."
+msgstr "No tienes permiso para hacer esto."
+
+msgid "Set the Spanish home page first (Corcovado Foundation → Settings)."
+msgstr "Primero define la página de inicio en español (Fundación Corcovado → Ajustes)."
+
+msgid "All languages"
+msgstr "Todos los idiomas"
+
+msgid "Order"
+msgstr "Orden"
+
+msgid "Spanish home (/es/)"
+msgstr "Inicio en español (/es/)"
+
+msgid "404 content"
+msgstr "Contenido 404"
+
+msgid "Page content"
+msgstr "Contenido de la página"
+
+msgid "Search engines and sharing"
+msgstr "Buscadores y redes sociales"
+
+msgid "Choose image"
+msgstr "Elegir imagen"
+
+msgid "Use this file"
+msgstr "Usar este archivo"
+
+msgid "Remove this item? (It disappears from the page when you update.)"
+msgstr "¿Eliminar este elemento? (Desaparece de la página al actualizar.)"
+
+msgid "Stories are loaded automatically from News (latest published in this language)."
+msgstr "Las noticias se cargan automáticamente desde Noticias (las últimas publicadas en este idioma)."
+
+msgid "Cards are loaded automatically from Events."
+msgstr "Las tarjetas se cargan automáticamente desde Eventos."
+
+msgid "Cards are loaded automatically from Library."
+msgstr "Las tarjetas se cargan automáticamente desde Biblioteca."
+
+msgid "Logos are loaded automatically from Partners (order = \"Order\" field)."
+msgstr "Los logos se cargan automáticamente desde Aliados (orden = campo \"Orden\")."
+
+msgid "Members are loaded from Partners assigned to this sponsor category. When there are none, the text below is shown."
+msgstr "Los miembros se cargan desde los Aliados asignados a esta categoría de patrocinio. Si no hay ninguno, se muestra el texto de abajo."
+
+msgid "Team groups and members are loaded automatically from Team."
+msgstr "Los grupos y miembros del equipo se cargan automáticamente desde Equipo."
+
+msgid "Edit texts, images, links and buttons of each section. The structure and the design of the page are locked so the layout always matches the approved design. Lists of cards can be reordered, duplicated or removed."
+msgstr "Edita textos, imágenes, enlaces y botones de cada sección. La estructura y el diseño de la página están bloqueados para que siempre coincidan con el diseño aprobado. Las listas de tarjetas se pueden reordenar, duplicar o eliminar."
+
+msgid "Page options"
+msgstr "Opciones de la página"
+
+msgid "Header logo"
+msgstr "Logo del encabezado"
+
+msgid "Footer logo"
+msgstr "Logo del pie de página"
+
+msgid "Footer style"
+msgstr "Estilo del pie de página"
+
+msgid "Section"
+msgstr "Sección"
+
+msgid "hidden"
+msgstr "oculta"
+
+msgid "Hide this section"
+msgstr "Ocultar esta sección"
+
+msgid "Move up"
+msgstr "Subir"
+
+msgid "Move down"
+msgstr "Bajar"
+
+msgid "Duplicate"
+msgstr "Duplicar"
+
+msgid "Remove"
+msgstr "Eliminar"
+
+msgid "Manage content"
+msgstr "Gestionar contenido"
+
+msgid "Examples: /about-us, /es/contact-us, #section, https://…, mailto:…, media:ID (file)."
+msgstr "Ejemplos: /about-us, /es/contact-us, #seccion, https://…, mailto:…, media:ID (archivo)."
+
+msgid "Allowed formatting: <strong>, <em>, <br>, <a href=\"…\">."
+msgstr "Formato permitido: <strong>, <em>, <br>, <a href=\"…\">."
+
+msgid "Main title"
+msgstr "Título principal"
+
+msgid "Title"
+msgstr "Título"
+
+msgid "Subtitle / card title"
+msgstr "Subtítulo / título de tarjeta"
+
+msgid "Text"
+msgstr "Texto"
+
+msgid "Short text"
+msgstr "Texto corto"
+
+msgid "Highlighted text"
+msgstr "Texto resaltado"
+
+msgid "Label"
+msgstr "Etiqueta"
+
+msgid "Button text after copying"
+msgstr "Texto del botón después de copiar"
+
+msgid "Link text"
+msgstr "Texto del enlace"
+
+msgid "Link"
+msgstr "Enlace"
+
+msgid "Image"
+msgstr "Imagen"
+
+msgid "Image description (alt text)"
+msgstr "Descripción de la imagen (texto alternativo)"
+
+msgid "List item"
+msgstr "Elemento de lista"
+
+msgid "Form field label"
+msgstr "Etiqueta del campo del formulario"
+
+msgid "Option"
+msgstr "Opción"
+
+msgid "Example text inside the field"
+msgstr "Texto de ejemplo dentro del campo"
+
+msgid "Accessibility label (screen readers)"
+msgstr "Etiqueta de accesibilidad (lectores de pantalla)"
+
+msgid "Tooltip"
+msgstr "Texto emergente"
+
+msgid "Number (animated counter)"
+msgstr "Número (contador animado)"
+
+msgid "Before the number"
+msgstr "Antes del número"
+
+msgid "After the number"
+msgstr "Después del número"
+
+msgid "Items"
+msgstr "Elementos"
+
+msgid "Text shown when the category has no members"
+msgstr "Texto que se muestra cuando la categoría no tiene miembros"
+
+msgid "Show all published partners (instead of the original selection of this page)"
+msgstr "Mostrar todos los aliados publicados (en lugar de la selección original de esta página)"
+
+msgid "Accessibility label of each card (%s = name)"
+msgstr "Etiqueta de accesibilidad de cada tarjeta (%s = nombre)"
+
+msgid "Item %d"
+msgstr "Elemento %d"
+
+msgid "An SEO plugin is handling titles and descriptions (or the output is disabled in Corcovado Foundation → Settings)."
+msgstr "Un plugin de SEO está gestionando títulos y descripciones (o la salida está desactivada en Fundación Corcovado → Ajustes)."
+
+msgid "Title in search results (empty = page title)"
+msgstr "Título en resultados de búsqueda (vacío = título de la página)"
+
+msgid "Description in search results and when shared"
+msgstr "Descripción en resultados de búsqueda y al compartir"
+
+msgid "Share image (empty = default share image)"
+msgstr "Imagen para compartir (vacío = imagen predeterminada)"
+
+msgid "News"
+msgstr "Noticias"
+
+msgid "News story"
+msgstr "Noticia"
+
+msgid "Events"
+msgstr "Eventos"
+
+msgid "Event"
+msgstr "Evento"
+
+msgid "Team"
+msgstr "Equipo"
+
+msgid "Team member"
+msgstr "Miembro del equipo"
+
+msgid "Library"
+msgstr "Biblioteca"
+
+msgid "Resource"
+msgstr "Recurso"
+
+msgid "Partners"
+msgstr "Aliados"
+
+msgid "Partner"
+msgstr "Aliado"
+
+msgid "News categories"
+msgstr "Categorías de noticias"
+
+msgid "News category"
+msgstr "Categoría de noticias"
+
+msgid "Team groups"
+msgstr "Grupos del equipo"
+
+msgid "Team group"
+msgstr "Grupo del equipo"
+
+msgid "Resource categories"
+msgstr "Categorías de recursos"
+
+msgid "Resource category"
+msgstr "Categoría de recursos"
+
+msgid "Add %s"
+msgstr "Añadir: %s"
+
+msgid "Edit %s"
+msgstr "Editar: %s"
+
+msgid "New %s"
+msgstr "Nuevo: %s"
+
+msgid "View %s"
+msgstr "Ver: %s"
+
+msgid "Search %s"
+msgstr "Buscar: %s"
+
+msgid "Nothing found."
+msgstr "No se encontró nada."
+
+msgid "Nothing found in Trash."
+msgstr "No hay nada en la papelera."
+
+msgid "Corcovado Foundation"
+msgstr "Fundación Corcovado"
+
+msgid "Settings"
+msgstr "Ajustes"
+
+msgid "Corcovado Foundation — Settings"
+msgstr "Fundación Corcovado — Ajustes"
+
+msgid "Languages"
+msgstr "Idiomas"
+
+msgid "English home page"
+msgstr "Página de inicio en inglés"
+
+msgid "The English home page is the WordPress front page (Settings → Reading)."
+msgstr "La página de inicio en inglés es la portada de WordPress (Ajustes → Lectura)."
+
+msgid "Spanish home page (/es/)"
+msgstr "Página de inicio en español (/es/)"
+
+msgid "Every page placed under this page (as a child page) is Spanish and is published under /es/."
+msgstr "Toda página colocada bajo esta página (como página hija) está en español y se publica bajo /es/."
+
+msgid "Organization name in Spanish"
+msgstr "Nombre de la organización en español"
+
+msgid "Used in titles and share tags of Spanish pages. The English name is the Site Title (Settings → General)."
+msgstr "Se usa en los títulos y etiquetas para compartir de las páginas en español. El nombre en inglés es el Título del sitio (Ajustes → Generales)."
+
+msgid "404 content (English)"
+msgstr "Contenido 404 (inglés)"
+
+msgid "404 content (Spanish)"
+msgstr "Contenido 404 (español)"
+
+msgid "Keep these pages Private: their sections are shown on \"page not found\" errors."
+msgstr "Mantén estas páginas en Privado: sus secciones se muestran en los errores de \"página no encontrada\"."
+
+msgid "Donations (Classy)"
+msgstr "Donaciones (Classy)"
+
+msgid "Classy campaign ID"
+msgstr "ID de campaña de Classy"
+
+msgid "Public campaign identifier used by the embedded donation form. Never paste API keys or secrets here."
+msgstr "Identificador público de campaña que usa el formulario de donación incrustado. Nunca pegues aquí claves de API ni secretos."
+
+msgid "Forms"
+msgstr "Formularios"
+
+msgid "Recipient email"
+msgstr "Correo destinatario"
+
+msgid "Contact and volunteer messages are emailed here. Messages are not stored in the database."
+msgstr "Los mensajes de contacto y voluntariado se envían por correo a esta dirección. Los mensajes no se guardan en la base de datos."
+
+msgid "Max. messages per visitor per hour"
+msgstr "Máx. de mensajes por visitante por hora"
+
+msgid "SEO"
+msgstr "SEO"
+
+msgid "SEO tags output"
+msgstr "Salida de etiquetas SEO"
+
+msgid "Automatic (off if an SEO plugin is active)"
+msgstr "Automática (desactivada si hay un plugin de SEO activo)"
+
+msgid "Always on"
+msgstr "Siempre activa"
+
+msgid "Off"
+msgstr "Desactivada"
+
+msgid "Titles, meta description, Open Graph and Twitter Cards. hreflang/x-default are always printed (they depend on the translation links). Canonical URLs and the sitemap are provided by WordPress itself."
+msgstr "Títulos, meta descripción, Open Graph y Twitter Cards. hreflang/x-default se imprimen siempre (dependen de los enlaces de traducción). Las URL canónicas y el sitemap los genera WordPress."
+
+msgid "Organization structured data"
+msgstr "Datos estructurados de la organización"
+
+msgid "Output NGO JSON-LD on the home pages"
+msgstr "Imprimir JSON-LD de ONG en las páginas de inicio"
+
+msgid "Default share image"
+msgstr "Imagen predeterminada para compartir"
+
+msgid "Media Library attachment ID used for og:image / twitter:image when a page has no hero image."
+msgstr "ID del adjunto de la Biblioteca de medios usado como og:image / twitter:image cuando una página no tiene imagen principal."
+
+msgid "Advanced"
+msgstr "Avanzado"
+
+msgid "Legacy .html redirects"
+msgstr "Redirecciones de .html antiguas"
+
+msgid "Redirect old static URLs (/about-us.html, /library/*.pdf…) to their WordPress equivalent with a single 301."
+msgstr "Redirige las URL estáticas antiguas (/about-us.html, /library/*.pdf…) a su equivalente en WordPress con una sola redirección 301."
+
+msgid "Behind Cloudflare"
+msgstr "Detrás de Cloudflare"
+
+msgid "The site is served through the Cloudflare proxy: use the CF-Connecting-IP header to identify visitors in the form rate limit. Enable only if the server accepts traffic from Cloudflare exclusively."
+msgstr "El sitio se sirve a través del proxy de Cloudflare: usar la cabecera CF-Connecting-IP para identificar a los visitantes en el límite de envíos. Actívalo solo si el servidor acepta tráfico exclusivamente de Cloudflare."
+
+msgid "Security headers"
+msgstr "Cabeceras de seguridad"
+
+msgid "Send X-Content-Type-Options, Referrer-Policy, Permissions-Policy and X-Frame-Options (same values as the static site)."
+msgstr "Enviar X-Content-Type-Options, Referrer-Policy, Permissions-Policy y X-Frame-Options (mismos valores que el sitio estático)."
+
+msgid "Default logo (logo.png)"
+msgstr "Logo predeterminado (logo.png)"
+
+msgid "Home logo (logo1.png)"
+msgstr "Logo de inicio (logo1.png)"
+
+msgid "Vector logo (logo-funcorco.svg)"
+msgstr "Logo vectorial (logo-funcorco.svg)"
+
+msgid "English logo (logo_en.png)"
+msgstr "Logo en inglés (logo_en.png)"
+
+msgid "Footer with text icons (FB / IG / @)"
+msgstr "Pie de página con iconos de texto (FB / IG / @)"
+
+msgid "Footer with drawn social icons"
+msgstr "Pie de página con iconos sociales dibujados"
+
+msgid "Default footer logo (logo-border.webp)"
+msgstr "Logo predeterminado del pie (logo-border.webp)"
+
+msgid "Import / Migration"
+msgstr "Importación / Migración"
+
+msgid "Corcovado Foundation — Import / Migration"
+msgstr "Fundación Corcovado — Importación / Migración"
+
+msgid "Imports the content of the original static website (pages, images, PDFs, news, events, team, library, partners, translations, menus). It can be run several times: items already imported are recognised and never duplicated. Nothing is ever deleted."
+msgstr "Importa el contenido del sitio estático original (páginas, imágenes, PDF, noticias, eventos, equipo, biblioteca, aliados, traducciones, menús). Se puede ejecutar varias veces: los elementos ya importados se reconocen y nunca se duplican. Nunca se elimina nada."
+
+msgid "Content to import"
+msgstr "Contenido a importar"
+
+msgid "Pages"
+msgstr "Páginas"
+
+msgid "Images and documents"
+msgstr "Imágenes y documentos"
+
+msgid "Team members"
+msgstr "Miembros del equipo"
+
+msgid "Library resources"
+msgstr "Recursos de la biblioteca"
+
+msgid "Source"
+msgstr "Origen"
+
+msgid "%d original files are not in migration/source/. Use the packaged plugin ZIP (it contains them) or copy the assets/ and library/ folders of the static site there."
+msgstr "Faltan %d archivos originales en migration/source/. Usa el ZIP empaquetado del plugin (los incluye) o copia allí las carpetas assets/ y library/ del sitio estático."
+
+msgid "Activate the \"Corcovado Foundation\" theme first so that menus and header/footer texts can be imported."
+msgstr "Activa primero el tema \"Corcovado Foundation\" para poder importar los menús y los textos del encabezado y pie."
+
+msgid "Create menus and header/footer texts (only where none exist yet)"
+msgstr "Crear menús y textos del encabezado/pie (solo donde aún no existan)"
+
+msgid "Configure the site: front page = Home, permalinks \"/%postname%\", comments closed by default"
+msgstr "Configurar el sitio: portada = Inicio, enlaces permanentes \"/%postname%\", comentarios cerrados por defecto"
+
+msgid "Refresh items that were already imported with the original content (overwrites edits made to those items)"
+msgstr "Actualizar los elementos ya importados con el contenido original (sobrescribe las ediciones hechas en esos elementos)"
+
+msgid "Dry run (simulate, write nothing)"
+msgstr "Simulación (no escribe nada)"
+
+msgid "Run import"
+msgstr "Ejecutar importación"
+
+msgid "Last dry run"
+msgstr "Última simulación"
+
+msgid "Last import"
+msgstr "Última importación"
+
+msgid "migration/data/content.json is missing."
+msgstr "Falta migration/data/content.json."
+
+msgid "migration/data/content.json is not valid."
+msgstr "migration/data/content.json no es válido."
+
+msgid "Hide the publication date on the story page"
+msgstr "Ocultar la fecha de publicación en la página de la noticia"
+

@@ -1,1 +1,4 @@
 .env
+dist/
+wp-content/plugins/corcovado-foundation-core/migration/source/
+__pycache__/
