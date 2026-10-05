@@ -1,0 +1,19 @@
+/*
+Theme Name: Corcovado Foundation
+Theme URI: https://corcovadofoundation.org/
+Author: Corcovado Foundation
+Description: Faithful WordPress version of the approved Corcovado Foundation website. Reproduces the original markup, CSS classes and JavaScript behaviour. Works with the "Corcovado Foundation Core" plugin (content types, languages, page sections, forms, SEO).
+Version: 1.0.0
+Requires at least: 6.5
+Tested up to: 7.1
+Requires PHP: 8.1
+Requires Plugins: corcovado-foundation-core
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: corcovado-foundation
+*/
+
+/*
+ * The design lives in assets/css/styles-20260929.css, an unmodified copy of the approved
+ * static site stylesheet (see docs/ARCHITECTURE-DECISIONS.md). This file only declares the theme.
+ */

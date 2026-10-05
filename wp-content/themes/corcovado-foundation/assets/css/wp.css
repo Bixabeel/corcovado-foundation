@@ -1,0 +1,17 @@
+/*
+ * WordPress-only additions. The approved design is assets/css/styles-20260929.css (unmodified).
+ * Nothing here applies to the markup migrated from the static site: these rules only style
+ * elements that exist exclusively in WordPress (story pages, editor content, admin bar,
+ * optional event image/meta, form status of the volunteer form).
+ */
+.cf-entry-content { max-width: 760px; color: var(--text); line-height: 1.7; }
+.cf-entry-content > * { margin-top: 0; margin-bottom: 1.1em; }
+.cf-entry-content img { max-width: 100%; height: auto; border-radius: 18px; }
+.cf-entry-content a { color: var(--forest); text-decoration: underline; }
+.cf-news-article .section-heading { text-align: left; margin-left: 0; }
+.cf-news-image { margin: 0 0 28px; }
+.cf-news-image img { width: 100%; max-width: 980px; height: auto; border-radius: 24px; display: block; }
+.cf-event-image { display: block; width: 100%; height: auto; border-radius: 18px; margin-bottom: 14px; }
+.cf-event-meta { font-size: .95rem; color: var(--muted); }
+[data-volunteer-status]:empty { display: none; }
+.screen-reader-text { border: 0; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute !important; width: 1px; word-wrap: normal !important; }

@@ -1,0 +1,20 @@
+/* Corcovado Foundation Core — admin styles. */
+#cf-layout .cf-section { border: 1px solid #dcdcde; border-radius: 4px; margin: 10px 0; background: #fff; }
+#cf-layout .cf-section > summary { cursor: pointer; padding: 10px 12px; font-weight: 600; background: #f6f7f7; }
+#cf-layout .cf-section.is-hidden > summary { color: #8c8f94; }
+#cf-layout .cf-section-body { padding: 4px 14px 12px; }
+.cf-field { margin: 10px 0; }
+.cf-field label, .cf-field .cf-label { display: block; font-weight: 600; margin-bottom: 3px; }
+.cf-field .description { display: block; }
+.cf-url { display: flex; gap: 6px; }
+.cf-image .cf-preview { display: block; max-width: 220px; max-height: 140px; margin: 4px 0 6px; border: 1px solid #dcdcde; background: #f0f0f1; }
+.cf-image .cf-preview[hidden] { display: none; }
+.cf-list { border: 1px dashed #c3c4c7; padding: 6px 10px 10px; margin: 12px 0; }
+.cf-list > legend { font-weight: 600; padding: 0 4px; }
+.cf-item { border: 1px solid #e0e0e0; border-radius: 3px; margin: 8px 0; background: #fbfbfc; }
+.cf-item-bar { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 6px 10px; background: #f0f0f1; }
+.cf-item-actions button { text-decoration: none; }
+.cf-item-body { padding: 0 10px 6px; }
+.cf-dyn { background: #f0f6fc; border-left: 4px solid #72aee6; padding: 4px 12px; margin: 10px 0; }
+.cf-meta-table th { text-align: left; width: 180px; vertical-align: top; padding: 8px 10px 8px 0; }
+.cf-meta-table td { padding: 6px 0; }
