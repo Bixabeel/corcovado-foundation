@@ -112,10 +112,11 @@ class CF_SEO {
 	 * @param string $title Title.
 	 */
 	public static function document_title( $title ) {
-		if ( ! self::enabled() || ! is_singular() ) {
+		$id = is_singular() ? get_queried_object_id() : ( is_404() ? self::page_404_id() : 0 );
+		if ( ! self::enabled() || ! $id ) {
 			return $title;
 		}
-		$custom = (string) get_post_meta( get_queried_object_id(), '_cf_seo_title', true );
+		$custom = (string) get_post_meta( $id, '_cf_seo_title', true );
 		return '' !== $custom ? $custom : $title;
 	}
 
@@ -135,9 +136,20 @@ class CF_SEO {
 	}
 
 	/**
+	 * Private page whose content is shown on "not found" errors in the current language.
+	 */
+	private static function page_404_id() {
+		return (int) CF_Settings::get( 'page_404_' . CF_Languages::current(), 0 );
+	}
+
+	/**
 	 * Meta description of the current request.
 	 */
 	public static function description() {
+		if ( is_404() ) {
+			$id = self::page_404_id();
+			return $id ? trim( wp_strip_all_tags( (string) get_post_meta( $id, '_cf_seo_description', true ) ) ) : '';
+		}
 		if ( is_singular() ) {
 			$id   = get_queried_object_id();
 			$desc = (string) get_post_meta( $id, '_cf_seo_description', true );
@@ -205,7 +217,15 @@ class CF_SEO {
 	 * Description, Open Graph and Twitter tags.
 	 */
 	public static function meta_tags() {
-		if ( ! self::enabled() || is_404() ) {
+		if ( ! self::enabled() ) {
+			return;
+		}
+		if ( is_404() ) {
+			// Like the static 404 pages: description only (no canonical, no share tags).
+			$desc = self::description();
+			if ( '' !== $desc ) {
+				printf( '<meta name="description" content="%s" />' . "\n", esc_attr( $desc ) );
+			}
 			return;
 		}
 		$lang  = CF_Languages::current();
@@ -285,7 +305,17 @@ class CF_SEO {
 	 * @param array $robots Directives.
 	 */
 	public static function robots( $robots ) {
-		if ( ! self::enabled() || ! get_option( 'blog_public' ) || is_404() || is_search() ) {
+		if ( ! self::enabled() ) {
+			return $robots;
+		}
+		if ( is_404() || is_search() ) {
+			// Static 404 pages: noindex,follow.
+			unset( $robots['index'], $robots['max-image-preview'] );
+			$robots['noindex'] = true;
+			$robots['follow']  = true;
+			return $robots;
+		}
+		if ( ! get_option( 'blog_public' ) ) {
 			return $robots;
 		}
 		return array_merge(

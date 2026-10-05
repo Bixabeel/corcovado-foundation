@@ -51,6 +51,7 @@ class CF_Admin_Content {
 		return array(
 			'short_title'      => __( 'Short title for the home page cards (optional)', 'corcovado-foundation-core' ),
 			'short_excerpt'    => __( 'Short text for the home page cards (optional, empty = excerpt)', 'corcovado-foundation-core' ),
+			'hide_date'        => __( 'Hide the publication date on the story page', 'corcovado-foundation-core' ),
 			'start_date'       => __( 'Start date', 'corcovado-foundation-core' ),
 			'end_date'         => __( 'End date (optional)', 'corcovado-foundation-core' ),
 			'time'             => __( 'Time (optional)', 'corcovado-foundation-core' ),

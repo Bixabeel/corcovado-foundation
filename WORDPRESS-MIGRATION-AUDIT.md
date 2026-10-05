@@ -206,7 +206,7 @@ Equivalencias EN ↔ ES detectadas (por nombre y por su uso en las páginas):
 
 ## 12. URLs actuales
 
-Producción en Cloudflare Pages sirve `/about-us.html` y, por su función "pretty URLs", también `/about-us`. Las 32 URLs indicadas por el cliente coinciden con los archivos existentes. Mapa completo en `docs/URL-MAP.md` (se genera en la fase de SEO).
+Producción en Cloudflare Pages sirve `/about-us.html` y, por su función "pretty URLs", también `/about-us`. Las 32 URLs indicadas por el cliente coinciden con los archivos existentes. Mapa completo en `docs/URL-MAP.md`.
 
 ## 13. SEO actual
 
@@ -260,7 +260,7 @@ Las 34 páginas tienen 15 variantes de footer: cambia el logo (`logo-border.webp
 
 - **Theme clásico/híbrido `corcovado-foundation`** (PHP, sin build): reproduce el HTML y las clases originales, incluye el CSS original sin modificar, `main.js`, `team.js`, `donation-embed.js`, `theme.json` mínimo (solo para el editor; no altera el frontend).
 - **Plugin `corcovado-foundation-core`**: tipos de contenido (News, Events, Team, Resources, Partners), taxonomías, idiomas y traducciones, campos de página con estructura bloqueada, SEO (title, description, canonical, hreflang, OG, Twitter, JSON-LD), formularios seguros, ajustes (Classy, correo), redirecciones heredadas y herramienta **Corcovado Foundation → Import / Migration** (dry run, logs, idempotente, no destructiva).
-- **Páginas**: plantilla PHP + campos. Cada página guarda su composición original como una lista de secciones; el editor puede cambiar textos, imágenes, botones y añadir/quitar tarjetas, pero **no** reordenar ni romper la estructura.
+- **Páginas**: plantilla PHP + campos. Cada página guarda cada sección original como plantilla HTML con huecos editables (textos, enlaces, imágenes, números). El editor puede cambiar esos valores, ocultar secciones y duplicar, eliminar o reordenar los elementos de las listas (tarjetas, estadísticas…), pero **no** cambiar la estructura ni el orden de las secciones. Ver `docs/ARCHITECTURE-DECISIONS.md` (AD-3).
 - **Gutenberg**: solo para el cuerpo de las Noticias (contenido largo). Las páginas institucionales no se convierten a bloques.
 
 ## 19. Idiomas: elección técnica

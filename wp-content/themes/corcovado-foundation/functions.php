@@ -145,6 +145,57 @@ function cf_enqueue_assets() {
 add_action( 'wp_enqueue_scripts', 'cf_enqueue_assets', 20 );
 
 /**
+ * Pages built from the original layouts do not use block styles: skip the global styles
+ * that WordPress would otherwise print inline in the head and footer.
+ */
+function cf_skip_global_styles() {
+	if ( is_admin() || is_singular( 'cf_news' ) ) {
+		return;
+	}
+	$page_id = is_singular( 'page' ) ? get_queried_object_id() : 0;
+	if ( is_singular( 'page' ) && ! ( $page_id && cf_core_active() && cf_get_layout( $page_id ) ) ) {
+		return;
+	}
+	remove_action( 'wp_enqueue_scripts', 'wp_enqueue_global_styles' );
+	remove_action( 'wp_footer', 'wp_enqueue_global_styles', 1 );
+}
+add_action( 'wp', 'cf_skip_global_styles' );
+
+/**
+ * Same font hints as the static site: preconnect to Google Fonts instead of dns-prefetch.
+ *
+ * @param array  $urls Hint URLs.
+ * @param string $type Hint type.
+ */
+function cf_resource_hints( $urls, $type ) {
+	if ( ! wp_style_is( 'cf-fonts', 'enqueued' ) ) {
+		return $urls;
+	}
+	if ( 'dns-prefetch' === $type ) {
+		return array_values( array_filter( $urls, static fn( $u ) => is_string( $u ) && false === strpos( $u, 'fonts.googleapis.com' ) ) );
+	}
+	if ( 'preconnect' === $type ) {
+		$urls[] = 'https://fonts.googleapis.com';
+		$urls[] = array(
+			'href'        => 'https://fonts.gstatic.com',
+			'crossorigin' => '',
+		);
+	}
+	return $urls;
+}
+add_filter( 'wp_resource_hints', 'cf_resource_hints', 10, 2 );
+
+/**
+ * Head links the static site did not have and nothing on the site uses.
+ */
+function cf_clean_head() {
+	remove_action( 'wp_head', 'rsd_link' );
+	remove_action( 'wp_head', 'wp_shortlink_wp_head', 10 );
+	remove_action( 'wp_head', 'wp_oembed_add_discovery_links' );
+}
+add_action( 'init', 'cf_clean_head' );
+
+/**
  * Editor styles for News (so the editor resembles the front end).
  */
 function cf_editor_styles() {

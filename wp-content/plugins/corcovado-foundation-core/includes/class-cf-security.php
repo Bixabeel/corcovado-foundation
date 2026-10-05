@@ -18,7 +18,10 @@ class CF_Security {
 	 */
 	public static function init() {
 		add_action( 'send_headers', array( __CLASS__, 'headers' ) );
+		// XML-RPC is not used by the site: no methods at all (this also removes pingbacks and system.multicall).
 		add_filter( 'xmlrpc_enabled', '__return_false' );
+		add_filter( 'xmlrpc_methods', '__return_empty_array' );
+		add_filter( 'wp_headers', array( __CLASS__, 'remove_pingback_header' ) );
 		remove_action( 'wp_head', 'wp_generator' );
 		add_filter( 'the_generator', '__return_empty_string' );
 		add_filter( 'rest_endpoints', array( __CLASS__, 'hide_user_endpoints' ) );
@@ -33,6 +36,7 @@ class CF_Security {
 		if ( is_admin() || ! CF_Settings::get( 'security_headers', 1 ) || headers_sent() ) {
 			return;
 		}
+		header_remove( 'X-Powered-By' );
 		header( 'X-Content-Type-Options: nosniff' );
 		header( 'Referrer-Policy: strict-origin-when-cross-origin' );
 		header( 'Permissions-Policy: camera=(), microphone=(), geolocation=()' );
@@ -48,6 +52,16 @@ class CF_Security {
 				header( 'Strict-Transport-Security: ' . $hsts );
 			}
 		}
+	}
+
+	/**
+	 * No X-Pingback header (XML-RPC is off).
+	 *
+	 * @param array $headers Headers.
+	 */
+	public static function remove_pingback_header( $headers ) {
+		unset( $headers['X-Pingback'] );
+		return $headers;
 	}
 
 	/**

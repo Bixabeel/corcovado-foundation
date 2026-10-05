@@ -68,6 +68,13 @@ class CF_Importer {
 	private $data;
 
 	/**
+	 * Whether this run changed the permalink structure.
+	 *
+	 * @var bool
+	 */
+	private $permalinks_changed = false;
+
+	/**
 	 * Constructor.
 	 *
 	 * @param bool  $dry Dry run.
@@ -170,7 +177,12 @@ class CF_Importer {
 			$this->configure_site();
 		}
 		if ( ! $this->dry ) {
-			flush_rewrite_rules( false );
+			// A hard flush also writes the rewrite rules to .htaccess (Apache) when the
+			// permalink structure was just changed; otherwise the rules in the database are enough.
+			flush_rewrite_rules( $this->permalinks_changed );
+			if ( $this->permalinks_changed ) {
+				$this->check_server_rewrites();
+			}
 		}
 		$this->log( 'info', sprintf( 'Done. Created %d, updated %d, skipped (already present) %d, errors %d.', $this->stats['created'], $this->stats['updated'], $this->stats['skipped'], $this->stats['errors'] ) );
 		return $this->result();
@@ -806,6 +818,26 @@ class CF_Importer {
 	}
 
 	/**
+	 * Warn when Apache cannot receive the rewrite rules (pages other than the home would 404).
+	 */
+	private function check_server_rewrites() {
+		if ( ! function_exists( 'get_home_path' ) ) {
+			require_once ABSPATH . 'wp-admin/includes/file.php';
+		}
+		if ( ! function_exists( 'got_mod_rewrite' ) ) {
+			require_once ABSPATH . 'wp-admin/includes/misc.php';
+		}
+		if ( ! got_mod_rewrite() ) {
+			return; // Nginx and other servers: rewrite configuration is done in the server.
+		}
+		$htaccess = get_home_path() . '.htaccess';
+		$contents = is_readable( $htaccess ) ? (string) file_get_contents( $htaccess ) : ''; // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
+		if ( ! str_contains( $contents, 'RewriteRule' ) ) {
+			$this->log( 'warn', 'The .htaccess file could not be updated. Open Settings → Permalinks and press "Save Changes" (or copy the rules shown there into .htaccess).' );
+		}
+	}
+
+	/**
 	 * Front page, permalinks (only when the administrator ticks the option).
 	 */
 	private function configure_site() {
@@ -821,6 +853,7 @@ class CF_Importer {
 		if ( '/%postname%' !== get_option( 'permalink_structure' ) ) {
 			global $wp_rewrite;
 			$wp_rewrite->set_permalink_structure( '/%postname%' );
+			$this->permalinks_changed = true;
 		}
 		update_option( 'default_comment_status', 'closed' );
 		update_option( 'default_ping_status', 'closed' );

@@ -21,6 +21,7 @@ class CF_Post_Types {
 			'cf_news'     => array(
 				'short_title'   => 'text',
 				'short_excerpt' => 'textarea',
+				'hide_date'     => 'bool',
 			),
 			'cf_event'    => array(
 				'start_date'  => 'date',
