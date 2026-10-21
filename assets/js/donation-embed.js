@@ -1,83 +1,37 @@
-(function () {
-  'use strict';
-
-  var campaignId = '568425';
-  var embedContainer = document.getElementById('classyEmbed');
-  var loadingEl = document.getElementById('classyLoading');
-  var errorEl = document.getElementById('classyError');
-
-  if (!embedContainer) return;
-
-  var retryCount = 0;
-  var maxRetries = 2;
-  var loadTimeout = null;
-
-  function showError() {
-    if (loadTimeout) window.clearTimeout(loadTimeout);
-    if (loadingEl) loadingEl.style.display = 'none';
-    if (errorEl) errorEl.style.display = 'block';
-  }
-
-  function startTimeout() {
-    if (loadTimeout) window.clearTimeout(loadTimeout);
-    loadTimeout = window.setTimeout(function () {
-      if (retryCount < maxRetries) {
-        retryCount += 1;
-        loadSdk();
-      } else {
-        showError();
-      }
-    }, 15000);
-  }
-
-  function initEmbed() {
-    if (!window.eg || typeof window.eg.init !== 'function') {
-      showError();
-      return;
-    }
-
-    try {
-      window.eg.init({
-        campaignId: campaignId,
-        container: embedContainer,
-        onLoad: function () {
-          if (loadTimeout) window.clearTimeout(loadTimeout);
-          if (loadingEl) loadingEl.style.display = 'none';
-        },
-        onError: function () {
-          showError();
+/* Embedded donation code supplied by the Foundation. */
+;(function (win) {
+  win.egProps = {
+    campaigns: [
+      {
+        campaignId: '568425',
+        donation: {
+          inline: {
+            urlParams: { },
+            elementSelector: '#classyEmbed'
+          }
         }
-      });
-    } catch (error) {
-      console.error('Classy initialization error:', error);
-      showError();
-    }
-  }
-
-  function loadSdk() {
-    if (loadTimeout) window.clearTimeout(loadTimeout);
-
-    var oldScript = document.getElementById('classy-sdk-script');
-    if (oldScript) oldScript.remove();
-
-    var script = document.createElement('script');
-    script.id = 'classy-sdk-script';
-    script.src = 'https://sdk.classy.org/embedded-giving.js';
-    script.async = true;
-    script.onload = function () {
-      window.setTimeout(initEmbed, 200);
-    };
-    script.onerror = function () {
-      if (retryCount < maxRetries) {
-        retryCount += 1;
-        window.setTimeout(loadSdk, 1000);
-      } else {
-        showError();
       }
-    };
-    document.body.appendChild(script);
-    startTimeout();
+    ]
+  }
+  win.document.body.appendChild(makeEGScript())
+
+  /** Create the embed script */
+  function makeEGScript() {
+    var egScript = win.document.createElement('script')
+    egScript.setAttribute('type', 'text/javascript')
+    egScript.setAttribute('async', 'true')
+    egScript.setAttribute('src', 'https://sdk.classy.org/embedded-giving.js')
+    return egScript
   }
 
-  loadSdk();
-}());
+  /* Read URL Params from your website. This could potentially
+   * be included in the embed snippet */
+  function readURLParams() {
+    const searchParams = new URLSearchParams(location.search)
+    const validUrlParams = ['c_src', 'c_src2']
+    return validUrlParams.reduce(function toURLParamsMap(urlParamsSoFar, validKey) {
+      const value = searchParams.get(validKey)
+      return value === null ? urlParamsSoFar : { ...urlParamsSoFar, [validKey]: value }
+    }, {})
+  }
+})(window)
